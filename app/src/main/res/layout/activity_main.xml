@@ -40,6 +40,32 @@
     	android:layout_weight="1"
     	android:textSize="16sp"
     	android:text="@string/undefined" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:textSize="16sp"
+		android:text="Headset is on" />
+	<TextView
+		android:id="@+id/on_status"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:textSize="16sp"
+		android:text="@string/undefined" />
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:textSize="16sp"
+		android:text="Blink event occurred" />
+	<TextView
+		android:id="@+id/blink_status"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:textSize="16sp"
+		android:text="@string/undefined" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

@@ -691,6 +691,7 @@ int id always 0x7f080040
 int id async 0x7f080041
 int id beginning 0x7f080042
 int id blink_flag 0x7f0800c7
+int id blink_status 0x7f0800c9
 int id blocking 0x7f080043
 int id bottom 0x7f080044
 int id buttonPanel 0x7f080045
@@ -753,6 +754,7 @@ int id notification_main_column 0x7f080079
 int id notification_main_column_container 0x7f08007a
 int id off 0x7f08007b
 int id on 0x7f08007c
+int id on_status 0x7f0800c8
 int id parentPanel 0x7f08007d
 int id pause 0x7f08007e
 int id progress_circular 0x7f08007f

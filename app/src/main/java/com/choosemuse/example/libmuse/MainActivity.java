@@ -279,7 +279,7 @@ public class MainActivity extends Activity implements OnClickListener {
                 muse.registerDataListener(dataListener, MuseDataPacketType.QUANTIZATION);
                 //TODO our code
                 muse.registerDataListener(dataListener, MuseDataPacketType.GYRO);
-//                muse.registerDataListener(dataListener, MuseDataPacketType.ARTIFACTS);
+                muse.registerDataListener(dataListener, MuseDataPacketType.ARTIFACTS);
                 // Initiate a connection to the headband and stream the data asynchronously.
                 muse.runAsynchronously();
             }
@@ -457,9 +457,30 @@ public class MainActivity extends Activity implements OnClickListener {
     @SuppressWarnings("unused")
     public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
         //TODO our code
+        final boolean isOn = p.getHeadbandOn();
+        final boolean blinkFlag = p.getBlink();
+
+        // Format a message to show the change of connection state in the UI.
+        final String onStatus = String.valueOf(isOn);
+        Log.i(TAG, onStatus);
+
+        final String blinkStatus = String.valueOf(blinkFlag);
+        Log.i(TAG, blinkStatus);
+
+        // Update the UI with the change in connection state.
+        handler.post(() -> {
+
+            final TextView onStatusText = findViewById(R.id.on_status);
+            onStatusText.setText(onStatus);
+
+            final TextView blinkStatusText = findViewById(R.id.blink_status);
+            blinkStatusText.setText(blinkStatus);
+
+        });
+
 //        writeArtifactPacketToFile(p);
-        GetBlinkFlag(p);
-        blinkStale = true;
+//        GetBlinkFlag(p);
+//        blinkStale = true;
     }
 
     /**

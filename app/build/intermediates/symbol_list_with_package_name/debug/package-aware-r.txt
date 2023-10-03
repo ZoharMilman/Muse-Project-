@@ -692,6 +692,7 @@ id always
 id async
 id beginning
 id blink_flag
+id blink_status
 id blocking
 id bottom
 id buttonPanel
@@ -754,6 +755,7 @@ id notification_main_column
 id notification_main_column_container
 id off
 id on
+id on_status
 id parentPanel
 id pause
 id progress_circular
