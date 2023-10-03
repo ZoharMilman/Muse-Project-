@@ -1,0 +1,58 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.choosemuse.example.libmuse"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-79
+11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-76
+12    <uses-permission android:name="android.permission.BLUETOOTH" />
+12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-68
+12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-65
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:5-74
+13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:22-71
+14
+15    <application
+15-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:11:5-26:19
+16        android:allowBackup="true"
+16-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:12:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\6182fe6d65ef8961a040b52a46bdfbf6\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:icon="@drawable/ic_launcher"
+19-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:9-45
+20        android:label="@string/app_name"
+20-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:14:9-41
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:15:9-40
+23        <activity
+23-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:9-25:20
+24            android:name="com.choosemuse.example.libmuse.MainActivity"
+24-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:17:13-71
+25            android:label="@string/app_name"
+25-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:19:13-45
+26            android:screenOrientation="portrait" >
+26-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:18:13-49
+27            <intent-filter>
+27-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:13-24:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:21:17-69
+28-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:21:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:23:17-77
+30-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:23:27-74
+31            </intent-filter>
+32        </activity>
+33    </application>
+34
+35</manifest>
