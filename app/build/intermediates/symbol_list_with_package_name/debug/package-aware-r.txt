@@ -691,7 +691,6 @@ id alertTitle
 id always
 id async
 id beginning
-id blink_flag
 id blink_status
 id blocking
 id bottom
@@ -739,6 +738,7 @@ id ifRoom
 id image
 id info
 id italic
+id jaw_clench_status
 id line1
 id line3
 id listMode

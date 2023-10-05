@@ -459,6 +459,7 @@ public class MainActivity extends Activity implements OnClickListener {
         //TODO our code
         final boolean isOn = p.getHeadbandOn();
         final boolean blinkFlag = p.getBlink();
+        final boolean jawClenchFlag = p.getJawClench();
 
         // Format a message to show the change of connection state in the UI.
         final String onStatus = String.valueOf(isOn);
@@ -467,7 +468,10 @@ public class MainActivity extends Activity implements OnClickListener {
         final String blinkStatus = String.valueOf(blinkFlag);
         Log.i(TAG, blinkStatus);
 
-        // Update the UI with the change in connection state.
+        final String jawClenchStatus = String.valueOf(jawClenchFlag);
+        Log.i(TAG, jawClenchStatus);
+
+        // Update the UI with the change in artifact state.
         handler.post(() -> {
 
             final TextView onStatusText = findViewById(R.id.on_status);
@@ -476,11 +480,11 @@ public class MainActivity extends Activity implements OnClickListener {
             final TextView blinkStatusText = findViewById(R.id.blink_status);
             blinkStatusText.setText(blinkStatus);
 
+            final TextView jawClenchStatusText = findViewById(R.id.jaw_clench_status);
+            jawClenchStatusText.setText(jawClenchStatus);
+
         });
 
-//        writeArtifactPacketToFile(p);
-//        GetBlinkFlag(p);
-//        blinkStale = true;
     }
 
     /**
@@ -522,9 +526,9 @@ public class MainActivity extends Activity implements OnClickListener {
         if (gyroToggleX == 1 && gyroBuffer[0] < -gyroThresholdX) gyroToggleX = 0;
     }
 
-    private void GetBlinkFlag(MuseArtifactPacket p) {
-        blinkFlag = p.getHeadbandOn(); //TODO for real change this
-    }
+//    private void GetBlinkFlag(MuseArtifactPacket p) {
+//        blinkFlag = p.getHeadbandOn(); //TODO for real change this
+//    }
 
 
     //--------------------------------------
@@ -633,11 +637,6 @@ public class MainActivity extends Activity implements OnClickListener {
     private void updateGyroToggleX() {
         TextView gyro_toggle_x = findViewById(R.id.gyro_toggle_x);
         gyro_toggle_x.setText(String.format(Locale.getDefault(), "%d", gyroToggleX));
-    }
-
-    private void updateBlinkFlag() {
-        TextView blink_flag = findViewById(R.id.blink_flag);
-        blink_flag.setText(String.format(Locale.getDefault(), "%d", blinkFlag));
     }
 
 
