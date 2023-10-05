@@ -520,6 +520,7 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     private void getGyroToggleX() {
+
         if (gyroToggleX == 0 && gyroBuffer[0] > gyroThresholdX) gyroToggleX = 1;
         if (gyroToggleX == 0 && gyroBuffer[0] < -gyroThresholdX) gyroToggleX = -1;
         if (gyroToggleX == -1 && gyroBuffer[0] > gyroThresholdX) gyroToggleX = 0;
