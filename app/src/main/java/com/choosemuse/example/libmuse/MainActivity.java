@@ -218,6 +218,9 @@ public class MainActivity extends Activity implements OnClickListener {
         // This is only needed if you want to do File I/O.
 //        fileThread.start();
 
+        //TODO our code. Initializes the head tilt machine.
+//        headTiltMachine = new
+
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
         handler.post(tickUi);
@@ -521,10 +524,14 @@ public class MainActivity extends Activity implements OnClickListener {
 
     private void getGyroToggleX() {
 
+
+//        if (gyroBuffer[0] < gyroThresholdX && gyroBuffer[0] > -gyroThresholdX) gyroToggleX = 0;
+
+
         if (gyroToggleX == 0 && gyroBuffer[0] > gyroThresholdX) gyroToggleX = 1;
         if (gyroToggleX == 0 && gyroBuffer[0] < -gyroThresholdX) gyroToggleX = -1;
-        if (gyroToggleX == -1 && gyroBuffer[0] > gyroThresholdX) gyroToggleX = 0;
-        if (gyroToggleX == 1 && gyroBuffer[0] < -gyroThresholdX) gyroToggleX = 0;
+//        if (gyroToggleX == -1 && gyroBuffer[0] > gyroThresholdX) gyroToggleX = 0;
+//        if (gyroToggleX == 1 && gyroBuffer[0] < -gyroThresholdX) gyroToggleX = 0;
     }
 
 //    private void GetBlinkFlag(MuseArtifactPacket p) {
@@ -634,6 +641,51 @@ public class MainActivity extends Activity implements OnClickListener {
         gyro_y.setText(String.format(Locale.getDefault(), "%6.2f", gyroBuffer[1]));
         gyro_z.setText(String.format(Locale.getDefault(), "%6.2f", gyroBuffer[2]));
     }
+
+    //This is a state machine implementation for the gyro toggle logic.
+    public class HeadTiltStateMachine {
+        private enum State {
+            IDLE,
+            HEAD_TILTED_RIGHT,
+            HEAD_TILTED_LEFT
+        }
+
+        private State currentState = State.IDLE;
+        private double gyroXThreshold = 100; // Adjust this threshold as needed
+
+        public void updateGyroXState(double gyroX) {
+            switch (currentState) {
+                case IDLE:
+                    if (gyroX > gyroXThreshold) {
+                        currentState = State.HEAD_TILTED_RIGHT;
+                        gyroToggleX  = 1;
+                    } else if (gyroX < -gyroXThreshold) {
+                        currentState = State.HEAD_TILTED_LEFT;
+                        gyroToggleX  = -1;
+                    }
+                    break;
+
+                case HEAD_TILTED_RIGHT:
+                    if (gyroX < -gyroXThreshold) {
+                        currentState = State.IDLE;
+                        gyroToggleX  = 0;
+                    }
+                    break;
+
+                case HEAD_TILTED_LEFT:
+                    if (gyroX > gyroXThreshold) {
+                        currentState = State.IDLE;
+                        gyroToggleX  = 0;
+                    }
+                    break;
+            }
+        }
+
+        public State getCurrentState() {
+            return currentState;
+        }
+    }
+
 
     private void updateGyroToggleX() {
         TextView gyro_toggle_x = findViewById(R.id.gyro_toggle_x);
