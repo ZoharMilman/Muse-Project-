@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-10:/values-watch-v21/values-watch-v21.xml",
+            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-9:/values-watch-v21/values-watch-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\4f3f4ca4f456e69a6dde89dbeb03c64f\\transformed\\appcompat-1.3.1\\res\\values-watch-v21\\values-watch-v21.xml",
+                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\e1e7c14e9d8b3930edf1f57f3bd4026e\\transformed\\appcompat-1.3.1\\res\\values-watch-v21\\values-watch-v21.xml",
                     "from": {
                         "startLines": "2,6,10",
                         "startColumns": "4,4,4",
