@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-10:/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-9:/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
                     "source": "D:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
