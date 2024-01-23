@@ -134,6 +134,8 @@ public class MainActivity extends Activity implements OnClickListener {
     private boolean accelStale;
 
     //TODO OUR CODE
+    private HeadTiltStateMachine headTiltMachine;
+
     private final double[] gyroBuffer = new double[3];
 
     private int gyroToggleX = 0;
@@ -219,7 +221,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //        fileThread.start();
 
         //TODO our code. Initializes the head tilt machine.
-//        headTiltMachine = new
+        headTiltMachine = new HeadTiltStateMachine();
 
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
@@ -439,7 +441,8 @@ public class MainActivity extends Activity implements OnClickListener {
             //TODO our code
             case GYRO:
                 getGyroValues(p);
-                getGyroToggleX();
+                headTiltMachine.updateGyroXState(gyroBuffer[0]);
+//                getGyroToggleX();
                 gyroStale = true;
                 break;
             case BATTERY:
