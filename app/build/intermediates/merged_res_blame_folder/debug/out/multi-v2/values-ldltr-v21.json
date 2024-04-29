@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-9:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-22:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\e1e7c14e9d8b3930edf1f57f3bd4026e\\transformed\\appcompat-1.3.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\522f153a538bd6da67840d9785ed5ce0\\transformed\\appcompat-1.3.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

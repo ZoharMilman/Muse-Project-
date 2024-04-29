@@ -5,12 +5,13 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="22"
         android:targetSdkVersion="30" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
 
     <application
         android:allowBackup="true"
@@ -30,6 +31,33 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--
+		Service used to scan in background to emulate scanning with
+		PendingIntent on Android 4.3 - 7.x. Service will scan in background with given
+		settings and filters.
+        -->
+        <service
+            android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"
+            android:exported="false" />
+        <!--
+		The receiver used to scan with PendingIntent on Android 8+.
+		It will translate results from android.bluetooth.le package to
+		no.nordicsemi.android.support.v18, apply filters or perform batching,
+		depending on the settings.
+        -->
+        <receiver
+            android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.support.v18.ACTION_FOUND" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.choosemuse.example.libmuse.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>

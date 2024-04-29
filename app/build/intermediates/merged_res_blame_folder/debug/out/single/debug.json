@@ -1,26 +1,26 @@
 [
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/menu_main.xml.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/menu/main.xml"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/drawable-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/drawable-xxhdpi/ic_launcher.png"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/drawable-mdpi_ic_launcher.png.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/drawable-mdpi/ic_launcher.png"
     },
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/drawable-mdpi_ic_launcher.png.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/drawable-mdpi/ic_launcher.png"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/drawable-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/drawable-xhdpi_ic_launcher.png.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/drawable-xhdpi/ic_launcher.png"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/menu_main.xml.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/menu/main.xml"
     },
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/layout_activity_main.xml.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/layout/activity_main.xml"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/drawable-hdpi_ic_launcher.png.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/drawable-hdpi/ic_launcher.png"
     },
     {
-        "merged": "com.choosemuse.example.libmuse.app-merged_res-11:/drawable-hdpi_ic_launcher.png.flat",
-        "source": "com.choosemuse.example.libmuse.app-main-13:/drawable-hdpi/ic_launcher.png"
+        "merged": "com.choosemuse.example.libmuse.app-merged_res-24:/layout_activity_main.xml.flat",
+        "source": "com.choosemuse.example.libmuse.app-main-26:/layout/activity_main.xml"
     }
 ]

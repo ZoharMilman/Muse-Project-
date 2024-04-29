@@ -3,6 +3,7 @@
  * Interaxon, Inc. 2016
  */
 
+
 package com.choosemuse.example.libmuse;
 
 import java.io.File;
@@ -56,6 +57,9 @@ import android.bluetooth.BluetoothAdapter;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
+// Importing the BLE interface from haifa3D
+import com.haifa3D.haifa3d_ble_api.BleAPICommands;
 
 /**
  * This example will illustrate how to connect to a Muse headband,
@@ -134,7 +138,7 @@ public class MainActivity extends Activity implements OnClickListener {
     private boolean accelStale;
 
     //TODO OUR CODE
-    private HeadTiltStateMachine headTiltMachine;
+//    private HeadTiltStateMachine headTiltMachine;
 
     private final double[] gyroBuffer = new double[3];
 
@@ -221,7 +225,7 @@ public class MainActivity extends Activity implements OnClickListener {
 //        fileThread.start();
 
         //TODO our code. Initializes the head tilt machine.
-        headTiltMachine = new HeadTiltStateMachine();
+//        headTiltMachine = new HeadTiltStateMachine();
 
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
@@ -441,7 +445,7 @@ public class MainActivity extends Activity implements OnClickListener {
             //TODO our code
             case GYRO:
                 getGyroValues(p);
-                headTiltMachine.updateGyroXState(gyroBuffer[0]);
+//                headTiltMachine.updateGyroXState(gyroBuffer[0]);
 //                getGyroToggleX();
                 gyroStale = true;
                 break;
@@ -646,48 +650,48 @@ public class MainActivity extends Activity implements OnClickListener {
     }
 
     //This is a state machine implementation for the gyro toggle logic.
-    public class HeadTiltStateMachine {
-        private enum State {
-            IDLE,
-            HEAD_TILTED_RIGHT,
-            HEAD_TILTED_LEFT
-        }
-
-        private State currentState = State.IDLE;
-        private double gyroXThreshold = 100; // Adjust this threshold as needed
-
-        public void updateGyroXState(double gyroX) {
-            switch (currentState) {
-                case IDLE:
-                    if (gyroX > gyroXThreshold) {
-                        currentState = State.HEAD_TILTED_RIGHT;
-                        gyroToggleX  = 1;
-                    } else if (gyroX < -gyroXThreshold) {
-                        currentState = State.HEAD_TILTED_LEFT;
-                        gyroToggleX  = -1;
-                    }
-                    break;
-
-                case HEAD_TILTED_RIGHT:
-                    if (gyroX < -gyroXThreshold) {
-                        currentState = State.IDLE;
-                        gyroToggleX  = 0;
-                    }
-                    break;
-
-                case HEAD_TILTED_LEFT:
-                    if (gyroX > gyroXThreshold) {
-                        currentState = State.IDLE;
-                        gyroToggleX  = 0;
-                    }
-                    break;
-            }
-        }
-
-        public State getCurrentState() {
-            return currentState;
-        }
-    }
+//    public class HeadTiltStateMachine {
+//        private enum State {
+//            IDLE,
+//            HEAD_TILTED_RIGHT,
+//            HEAD_TILTED_LEFT
+//        }
+//
+//        private State currentState = State.IDLE;
+//        private double gyroXThreshold = 100; // Adjust this threshold as needed
+//
+//        public void updateGyroXState(double gyroX) {
+//            switch (currentState) {
+//                case IDLE:
+//                    if (gyroX > gyroXThreshold) {
+//                        currentState = State.HEAD_TILTED_RIGHT;
+//                        gyroToggleX  = 1;
+//                    } else if (gyroX < -gyroXThreshold) {
+//                        currentState = State.HEAD_TILTED_LEFT;
+//                        gyroToggleX  = -1;
+//                    }
+//                    break;
+//
+//                case HEAD_TILTED_RIGHT:
+//                    if (gyroX < -gyroXThreshold) {
+//                        currentState = State.IDLE;
+//                        gyroToggleX  = 0;
+//                    }
+//                    break;
+//
+//                case HEAD_TILTED_LEFT:
+//                    if (gyroX > gyroXThreshold) {
+//                        currentState = State.IDLE;
+//                        gyroToggleX  = 0;
+//                    }
+//                    break;
+//            }
+//        }
+//
+//        public State getCurrentState() {
+//            return currentState;
+//        }
+//    }
 
 
     private void updateGyroToggleX() {
