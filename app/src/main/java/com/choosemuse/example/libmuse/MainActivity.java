@@ -40,6 +40,8 @@ import com.choosemuse.libmuse.ResultLevel;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothManager;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -117,6 +119,9 @@ public class MainActivity extends Activity implements OnClickListener {
      * that extends MuseDataListener.
      */
     private DataListener dataListener;
+
+
+
 
     /**
      * Data comes in from the headband at a very fast rate; 220Hz, 256Hz or 500Hz,
@@ -212,6 +217,7 @@ public class MainActivity extends Activity implements OnClickListener {
         // we can connect to.
         manager.setMuseListener(new MuseL(weakActivity));
 
+
         // Muse 2016 (MU-02) headbands use Bluetooth Low Energy technology to
         // simplify the connection process.  This requires access to the COARSE_LOCATION
         // or FINE_LOCATION permissions.  Make sure we have these permissions before
@@ -231,6 +237,10 @@ public class MainActivity extends Activity implements OnClickListener {
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
         handler.post(tickUi);
+
+        // Initialize Bluetooth adapter and start scanning for BLE devices
+        BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
+        BluetoothAdapter bluetoothAdapter = bluetoothManager.getAdapter();
     }
 
     protected void onPause() {
@@ -364,23 +374,6 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
     //--------------------------------------
-    // BLE listeners
-    public class MyBleListener implements BleAPICommands.IBleListener {
-        @Override
-        public void onConnected(BleService bleService) {
-            // Handle the connection event
-            System.out.println("Connected to BLE service");
-        }
-
-        @Override
-        public void onDisconnected() {
-            // Handle the disconnection event
-            System.out.println("Disconnected from BLE service");
-        }
-    }
-
-
-
     // Muse Listeners
 
     /**
@@ -861,6 +854,8 @@ public class MainActivity extends Activity implements OnClickListener {
     //
     // Each of these classes extend from the appropriate listener and contain a weak reference
     // to the activity.  Each class simply forwards the messages it receives back to the Activity.
+
+    // Muse listeners
     static class MuseL extends MuseListener {
         final WeakReference<MainActivity> activityRef;
 
