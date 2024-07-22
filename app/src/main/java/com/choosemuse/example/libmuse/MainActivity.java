@@ -60,6 +60,7 @@ import androidx.core.content.ContextCompat;
 
 // Importing the BLE interface from haifa3D
 import com.haifa3D.haifa3d_ble_api.BleAPICommands;
+import com.haifa3D.haifa3d_ble_api.ble.BleService;
 
 /**
  * This example will illustrate how to connect to a Muse headband,
@@ -187,7 +188,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
     //--------------------------------------
-    // Lifecycle / Connection code
+    // Lifecycle / Connection code for the muse
 
 
     @Override
@@ -313,6 +314,11 @@ public class MainActivity extends Activity implements OnClickListener {
         }
     }
 
+
+    //--------------------------------------
+    // Lifecycle / Connection code for the ble interface
+
+
     //--------------------------------------
     // Permissions
 
@@ -358,7 +364,24 @@ public class MainActivity extends Activity implements OnClickListener {
 
 
     //--------------------------------------
-    // Listeners
+    // BLE listeners
+    public class MyBleListener implements BleAPICommands.IBleListener {
+        @Override
+        public void onConnected(BleService bleService) {
+            // Handle the connection event
+            System.out.println("Connected to BLE service");
+        }
+
+        @Override
+        public void onDisconnected() {
+            // Handle the disconnection event
+            System.out.println("Disconnected from BLE service");
+        }
+    }
+
+
+
+    // Muse Listeners
 
     /**
      * You will receive a callback to this method each time a headband is discovered.
