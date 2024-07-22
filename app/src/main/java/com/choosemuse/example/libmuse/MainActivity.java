@@ -239,8 +239,9 @@ public class MainActivity extends Activity implements OnClickListener {
         handler.post(tickUi);
 
         // Initialize Bluetooth adapter and start scanning for BLE devices
-        BluetoothManager bluetoothManager = (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
-        BluetoothAdapter bluetoothAdapter = bluetoothManager.getAdapter();
+        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+
+
     }
 
     protected void onPause() {

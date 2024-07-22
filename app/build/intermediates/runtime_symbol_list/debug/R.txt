@@ -567,6 +567,7 @@ int attr radioButtonStyle 0x7f030204
 int attr ratingBarStyle 0x7f030205
 int attr ratingBarStyleIndicator 0x7f030206
 int attr ratingBarStyleSmall 0x7f030207
+int attr recyclerViewStyle 0x7f0302bc
 int attr region_heightLessThan 0x7f030208
 int attr region_heightMoreThan 0x7f030209
 int attr region_widthLessThan 0x7f03020a
@@ -1465,6 +1466,7 @@ int id progress_horizontal 0x7f0800ea
 int id radio 0x7f0800eb
 int id ratio 0x7f0800ec
 int id rectangles 0x7f0800ed
+int id recycler_view 0x7f08015d
 int id refresh 0x7f0800ee
 int id reverseSawtooth 0x7f0800ef
 int id right 0x7f0800f0
@@ -3412,18 +3414,19 @@ int styleable PropertySet_visibilityMode 4
 int[] styleable RecycleListView { 0x7f0301e2, 0x7f0301e5 }
 int styleable RecycleListView_paddingBottomNoButtons 0
 int styleable RecycleListView_paddingTopNoTitle 1
-int[] styleable RecyclerView { 0x010100c4, 0x010100f1, 0x7f030106, 0x7f030107, 0x7f030108, 0x7f030109, 0x7f03010a, 0x7f030161, 0x7f03020c, 0x7f030226, 0x7f03022c }
+int[] styleable RecyclerView { 0x010100c4, 0x010100eb, 0x010100f1, 0x7f030106, 0x7f030107, 0x7f030108, 0x7f030109, 0x7f03010a, 0x7f030161, 0x7f03020c, 0x7f030226, 0x7f03022c }
 int styleable RecyclerView_android_orientation 0
-int styleable RecyclerView_android_descendantFocusability 1
-int styleable RecyclerView_fastScrollEnabled 2
-int styleable RecyclerView_fastScrollHorizontalThumbDrawable 3
-int styleable RecyclerView_fastScrollHorizontalTrackDrawable 4
-int styleable RecyclerView_fastScrollVerticalThumbDrawable 5
-int styleable RecyclerView_fastScrollVerticalTrackDrawable 6
-int styleable RecyclerView_layoutManager 7
-int styleable RecyclerView_reverseLayout 8
-int styleable RecyclerView_spanCount 9
-int styleable RecyclerView_stackFromEnd 10
+int styleable RecyclerView_android_clipToPadding 1
+int styleable RecyclerView_android_descendantFocusability 2
+int styleable RecyclerView_fastScrollEnabled 3
+int styleable RecyclerView_fastScrollHorizontalThumbDrawable 4
+int styleable RecyclerView_fastScrollHorizontalTrackDrawable 5
+int styleable RecyclerView_fastScrollVerticalThumbDrawable 6
+int styleable RecyclerView_fastScrollVerticalTrackDrawable 7
+int styleable RecyclerView_layoutManager 8
+int styleable RecyclerView_reverseLayout 9
+int styleable RecyclerView_spanCount 10
+int styleable RecyclerView_stackFromEnd 11
 int[] styleable ScrimInsetsFrameLayout { 0x7f03014b }
 int styleable ScrimInsetsFrameLayout_insetForeground 0
 int[] styleable ScrollingViewBehavior_Layout { 0x7f030047 }
