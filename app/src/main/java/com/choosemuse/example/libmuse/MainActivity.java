@@ -8,6 +8,7 @@ package com.choosemuse.example.libmuse;
 
 import java.io.File;
 import java.lang.ref.WeakReference;
+import java.util.ArrayList;
 import java.util.List;
 
 import java.util.Locale;
@@ -40,6 +41,7 @@ import com.choosemuse.libmuse.ResultLevel;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -59,6 +61,8 @@ import android.bluetooth.BluetoothAdapter;
 
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 // Importing the BLE interface from haifa3D
 import com.haifa3D.haifa3d_ble_api.BleAPICommands;
@@ -191,6 +195,13 @@ public class MainActivity extends Activity implements OnClickListener {
      */
     private final AtomicReference<Handler> fileHandler = new AtomicReference<>();
 
+    /**
+     * This is BLE related variables
+     *
+     */
+    private BleManager bleManager;
+    private DeviceAdapter deviceAdapter;
+    private List<BluetoothDevice> deviceList = new ArrayList<>();
 
     //--------------------------------------
     // Lifecycle / Connection code for the muse
@@ -224,8 +235,9 @@ public class MainActivity extends Activity implements OnClickListener {
         // proceeding.
         ensurePermissions();
 
-        // Load and initialize our UI.
+        // Initialize the UI and BLE manager
         initUI();
+        bleManager = new BleManager(this, deviceAdapter);
 
         // Start up a thread for asynchronous file operations.
         // This is only needed if you want to do File I/O.
@@ -237,10 +249,6 @@ public class MainActivity extends Activity implements OnClickListener {
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
         handler.post(tickUi);
-
-        // Initialize Bluetooth adapter and start scanning for BLE devices
-        BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
-
 
     }
 
@@ -322,7 +330,14 @@ public class MainActivity extends Activity implements OnClickListener {
                 dataTransmission = !dataTransmission;
                 muse.enableDataTransmission(dataTransmission);
             }
+
+        } else if (v.getId() == R.id.refresh_bluetooth) {
+            // Start BLE scan on refresh button click
+            deviceList.clear();
+            deviceAdapter.notifyDataSetChanged();
+            bleManager.startScan();
         }
+
     }
 
 
@@ -344,32 +359,22 @@ public class MainActivity extends Activity implements OnClickListener {
      * If the permission is not granted, then Muse 2016 (MU-02) headbands will
      * not be discovered and a SecurityException will be thrown.
      */
+    private static final int REQUEST_PERMISSIONS_REQUEST_CODE = 1;
     private void ensurePermissions() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
-        if (ContextCompat.checkSelfPermission(this,
-                Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED)
-        {
-            // We don't have the ACCESS_FINE_LOCATION permission so create the dialogs asking
-            // the user to grant us the permission.
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_PERMISSIONS_REQUEST_CODE);
+        }    if (ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_SCAN) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED ||
+                ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
 
-            DialogInterface.OnClickListener buttonListener =
-                    (dialog, which) -> {
-                        dialog.dismiss();
-                        ActivityCompat.requestPermissions(MainActivity.this,
-                                new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
-                                0);
-                    };
-
-            // This is the context dialog which explains to the user the reason we are requesting
-            // this permission.  When the user presses the positive (I Understand) button, the
-            // standard Android permission dialog will be displayed (as defined in the button
-            // listener above).
-            AlertDialog introDialog = new AlertDialog.Builder(this)
-                    .setTitle(R.string.permission_dialog_title)
-                    .setMessage(R.string.permission_dialog_description)
-                    .setPositiveButton(R.string.permission_dialog_understand, buttonListener)
-                    .create();
-            introDialog.show();
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.BLUETOOTH_SCAN, Manifest.permission.BLUETOOTH_CONNECT, Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_PERMISSIONS_REQUEST_CODE);
         }
     }
 
@@ -580,9 +585,17 @@ public class MainActivity extends Activity implements OnClickListener {
         Button pauseButton = findViewById(R.id.pause);
         pauseButton.setOnClickListener(this);
 
+        // This object is the way we show available muse headsets in the ui
         spinnerAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item);
         Spinner musesSpinner = findViewById(R.id.muses_spinner);
         musesSpinner.setAdapter(spinnerAdapter);
+
+        // This is for the available ble devices
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        deviceAdapter = new DeviceAdapter(this, deviceList);
+        recyclerView.setAdapter(deviceAdapter);
+
     }
 
     /**
@@ -616,6 +629,11 @@ public class MainActivity extends Activity implements OnClickListener {
 //            if (blinkStale) {
 //                updateBlinkFlag();
 //            }
+
+            // Start BLE scan if not already scanning
+            if (!bleManager.isScanning()) {
+                bleManager.startScan();
+            }
 
             handler.postDelayed(tickUi, 1000 / 60);
         }

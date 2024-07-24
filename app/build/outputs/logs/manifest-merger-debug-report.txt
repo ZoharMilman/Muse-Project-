@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
 MERGED from [:Haifa3D-BLE-API] D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\Haifa3D-BLE-API\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2de39ab276c22673e3453ba987234e89\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
@@ -66,12 +66,12 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8339f821aae107c38cc4b65147d27811\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5422fef709eca349e2aed875acd4931c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\cce2525af2e02f8d7ac91c2e57a082df\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
 	package
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-27:12
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-29:12
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:4:5-30
@@ -83,30 +83,38 @@ INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestL
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:3:5-28
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:5-79
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
-	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:22-76
 uses-permission#android.permission.BLUETOOTH
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-68
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:5-67
 MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
 MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
 MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
 MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
 	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-65
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-74
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-73
 MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
 MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
 MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
 MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
 	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-71
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-78
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-76
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:5-72
+	android:name
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:22-70
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:5-75
+	android:name
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:22-73
 application
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:5-25:19
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:12:5-27:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -124,31 +132,31 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:9-41
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:12:9-45
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:14:9-45
 	android:allowBackup
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:11:9-35
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:9-35
 	android:theme
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:9-40
 activity#com.choosemuse.example.libmuse.MainActivity
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:15:9-24:20
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:screenOrientation
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:17:13-49
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:19:13-49
 	android:label
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:18:13-45
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:13-45
 	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:13-71
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:18:13-71
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:24:27-74
 uses-sdk
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml

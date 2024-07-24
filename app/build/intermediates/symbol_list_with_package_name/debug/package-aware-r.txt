@@ -1350,6 +1350,8 @@ id design_menu_item_action_area
 id design_menu_item_action_area_stub
 id design_menu_item_text
 id design_navigation_view
+id device_address
+id device_name
 id dialog_button
 id dimensions
 id direct
@@ -1469,6 +1471,7 @@ id ratio
 id rectangles
 id recycler_view
 id refresh
+id refresh_bluetooth
 id reverseSawtooth
 id right
 id right_icon
@@ -1650,6 +1653,7 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
+layout device_item
 layout mtrl_layout_snackbar
 layout mtrl_layout_snackbar_include
 layout notification_action

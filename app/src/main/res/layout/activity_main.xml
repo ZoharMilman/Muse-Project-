@@ -59,8 +59,13 @@
 				android:layout_height="match_parent"
 				android:layout_alignParentTop="true"
 				android:layout_alignParentBottom="true"/>
-
 		</RelativeLayout>
+
+		<Button
+			android:id="@+id/refresh_bluetooth"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Refresh"/>
 
 		<TextView
 			android:layout_width="match_parent"
@@ -75,6 +80,7 @@
 			android:textSize="18sp"
 			android:text="@string/undefined"
 			android:paddingBottom="8dp"/>
+
 
 		<TextView
 			android:layout_width="match_parent"

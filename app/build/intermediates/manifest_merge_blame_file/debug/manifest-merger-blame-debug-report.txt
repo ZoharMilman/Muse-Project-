@@ -10,93 +10,99 @@
 9        android:targetSdkVersion="30" />
 9-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:5-79
-11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:22-76
-12    <uses-permission android:name="android.permission.BLUETOOTH" />
-12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-68
-12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-65
-13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-74
-13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-71
-14    <uses-permission android:name="no.nordicsemi.android.LOG" />
-14-->[no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:5-65
-14-->[no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:22-62
-15
-16    <application
-16-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:5-25:19
-17        android:allowBackup="true"
-17-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:11:9-35
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-19        android:debuggable="true"
-20        android:icon="@drawable/ic_launcher"
-20-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:12:9-45
-21        android:label="@string/app_name"
-21-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:9-41
-22        android:testOnly="true"
-23        android:theme="@style/AppTheme" >
-23-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:14:9-40
-24        <activity
-24-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:15:9-24:20
-25            android:name="com.choosemuse.example.libmuse.MainActivity"
-25-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:13-71
-26            android:label="@string/app_name"
-26-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:18:13-45
-27            android:screenOrientation="portrait" >
-27-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:17:13-49
-28            <intent-filter>
-28-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:19:13-23:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:17-69
-29-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:17-77
-31-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:27-74
-32            </intent-filter>
-33        </activity>
-34        <!--
-35		Service used to scan in background to emulate scanning with
-36		PendingIntent on Android 4.3 - 7.x. Service will scan in background with given
-37		settings and filters.
-38        -->
-39        <service
-39-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:31:9-33:40
-40            android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"
-40-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:32:13-84
-41            android:exported="false" />
-41-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:33:13-37
-42        <!--
-43		The receiver used to scan with PendingIntent on Android 8+.
-44		It will translate results from android.bluetooth.le package to
-45		no.nordicsemi.android.support.v18, apply filters or perform batching,
-46		depending on the settings.
-47        -->
-48        <receiver
-48-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:41:9-48:20
-49            android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver"
-49-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:42:13-91
-50            android:exported="true" >
-50-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:43:13-36
-51            <intent-filter>
-51-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:45:13-47:29
-52                <action android:name="no.nordicsemi.android.support.v18.ACTION_FOUND" />
-52-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:17-89
-52-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:25-86
-53            </intent-filter>
-54        </receiver>
-55
-56        <provider
-56-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
-57            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-57-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
-58            android:authorities="com.choosemuse.example.libmuse.lifecycle-process"
-58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
-59            android:exported="false"
-59-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
-60            android:multiprocess="true" />
-60-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
-61    </application>
-62
-63</manifest>
+11    <uses-permission android:name="android.permission.BLUETOOTH" />
+11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:22-65
+12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-73
+12-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-71
+13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-78
+13-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-76
+14    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+14-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:5-72
+14-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:9:22-70
+15    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+15-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:5-75
+15-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:10:22-73
+16    <uses-permission android:name="no.nordicsemi.android.LOG" />
+16-->[no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:5-65
+16-->[no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:22-62
+17
+18    <application
+18-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:12:5-27:19
+19        android:allowBackup="true"
+19-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@drawable/ic_launcher"
+22-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:14:9-45
+23        android:label="@string/app_name"
+23-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:15:9-41
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:9-40
+26        <activity
+26-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:17:9-26:20
+27            android:name="com.choosemuse.example.libmuse.MainActivity"
+27-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:18:13-71
+28            android:label="@string/app_name"
+28-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:20:13-45
+29            android:screenOrientation="portrait" >
+29-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:19:13-49
+30            <intent-filter>
+30-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:21:13-25:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:17-69
+31-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:22:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:24:17-77
+33-->D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:24:27-74
+34            </intent-filter>
+35        </activity>
+36        <!--
+37		Service used to scan in background to emulate scanning with
+38		PendingIntent on Android 4.3 - 7.x. Service will scan in background with given
+39		settings and filters.
+40        -->
+41        <service
+41-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:31:9-33:40
+42            android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"
+42-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:32:13-84
+43            android:exported="false" />
+43-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:33:13-37
+44        <!--
+45		The receiver used to scan with PendingIntent on Android 8+.
+46		It will translate results from android.bluetooth.le package to
+47		no.nordicsemi.android.support.v18, apply filters or perform batching,
+48		depending on the settings.
+49        -->
+50        <receiver
+50-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:41:9-48:20
+51            android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver"
+51-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:42:13-91
+52            android:exported="true" >
+52-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:43:13-36
+53            <intent-filter>
+53-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:45:13-47:29
+54                <action android:name="no.nordicsemi.android.support.v18.ACTION_FOUND" />
+54-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:17-89
+54-->[no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:25-86
+55            </intent-filter>
+56        </receiver>
+57
+58        <provider
+58-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+59            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+59-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+60            android:authorities="com.choosemuse.example.libmuse.lifecycle-process"
+60-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+61            android:exported="false"
+61-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+62            android:multiprocess="true" />
+62-->[androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+63    </application>
+64
+65</manifest>
