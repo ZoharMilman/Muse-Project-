@@ -24,7 +24,7 @@ public class BleManager {
     private List<BluetoothDevice> deviceList;
     private DeviceAdapter deviceAdapter;
 
-    public BleManager(Context context, DeviceAdapter adapter) {
+    public BleManager(Context context, DeviceAdapter adapter, List<BluetoothDevice> deviceList) {
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if (bluetoothAdapter == null) {
             Log.e(TAG, "Bluetooth is not supported on this device");
@@ -33,7 +33,7 @@ public class BleManager {
         this.bluetoothAdapter = bluetoothAdapter;
         this.bluetoothLeScanner = bluetoothAdapter.getBluetoothLeScanner();
         this.handler = new Handler();
-        this.deviceList = new ArrayList<>();
+        this.deviceList = deviceList;
         this.deviceAdapter = adapter;
 
         scanCallback = new ScanCallback() {
@@ -41,7 +41,6 @@ public class BleManager {
             public void onScanResult(int callbackType, ScanResult result) {
                 BluetoothDevice device = result.getDevice();
                 addDevice(device);
-                Log.i(TAG, "FOUND DEVICE: " + device);
             }
 
             @Override
@@ -94,8 +93,18 @@ public class BleManager {
 
     private void addDevice(BluetoothDevice device) {
         if (!deviceList.contains(device)) {
+            Log.d(TAG, "Items in DeviceAdapter before adding discovered device " + deviceAdapter.getItemCount());
+            Log.d(TAG, "Discovered device: " + device.getName() + " [" + device.getAddress() + "]");
+            Log.d(TAG, "Items in DeviceAdapter after adding discovered device " + deviceAdapter.getItemCount());
             deviceList.add(device);
-            deviceAdapter.notifyDataSetChanged();
+
+            handler.post(new Runnable() {
+                @Override
+                public void run() {
+                    Log.d(TAG, "Current Device List " + getDeviceList());
+                    deviceAdapter.notifyDataSetChanged();
+                }
+            });
         }
     }
 

@@ -235,9 +235,10 @@ public class MainActivity extends Activity implements OnClickListener {
         // proceeding.
         ensurePermissions();
 
-        // Initialize the UI and BLE manager
+        // Initialize the UI and BLE manager, careful to give them the same deviceList to work with
+        deviceAdapter = new DeviceAdapter(this, deviceList);
+        bleManager = new BleManager(this, deviceAdapter, deviceList);
         initUI();
-        bleManager = new BleManager(this, deviceAdapter);
 
         // Start up a thread for asynchronous file operations.
         // This is only needed if you want to do File I/O.
@@ -333,7 +334,10 @@ public class MainActivity extends Activity implements OnClickListener {
 
         } else if (v.getId() == R.id.refresh_bluetooth) {
             // Start BLE scan on refresh button click
-            deviceList.clear();
+            bleManager.stopScan();
+            Log.d(TAG, "Device list before refresh " + bleManager.getDeviceList());
+            bleManager.getDeviceList().clear();
+            Log.d(TAG, "Device list after refresh " + bleManager.getDeviceList());
             deviceAdapter.notifyDataSetChanged();
             bleManager.startScan();
         }
@@ -591,9 +595,15 @@ public class MainActivity extends Activity implements OnClickListener {
         musesSpinner.setAdapter(spinnerAdapter);
 
         // This is for the available ble devices
+        // Button for refreshing devices
+        Button bluetoothRefreshButton = findViewById(R.id.refresh_bluetooth);
+        bluetoothRefreshButton.setOnClickListener(this);
+
+        // Recycler view for showing devices
+
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        deviceAdapter = new DeviceAdapter(this, deviceList);
+//        deviceAdapter = new DeviceAdapter(this, bleManager.getDeviceList());
         recyclerView.setAdapter(deviceAdapter);
 
     }

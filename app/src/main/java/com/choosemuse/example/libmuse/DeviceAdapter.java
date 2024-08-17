@@ -2,6 +2,7 @@ package com.choosemuse.example.libmuse;
 
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,8 @@ import java.util.List;
 
 public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder> {
 
+    private static final String TAG = "DeviceAdapter";
+
     private List<BluetoothDevice> devices;
     private Context context;
 
@@ -21,6 +24,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder
         this.context = context;
         this.devices = devices;
     }
+
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -31,6 +35,7 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         BluetoothDevice device = devices.get(position);
+        Log.i(TAG, "Trying to show device " + device.getName() + ' ' + device.getAddress());
         holder.deviceName.setText(device.getName());
         holder.deviceAddress.setText(device.getAddress());
     }
