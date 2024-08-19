@@ -19,25 +19,34 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder
 
     private List<BluetoothDevice> devices;
     private Context context;
+    private OnDeviceClickListener listener;
 
-    public DeviceAdapter(Context context, List<BluetoothDevice> devices) {
+    public DeviceAdapter(Context context, List<BluetoothDevice> devices, OnDeviceClickListener listener) {
         this.context = context;
         this.devices = devices;
+        this.listener = listener;
     }
 
-
+    @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(context).inflate(R.layout.device_item, parent, false);
         return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         BluetoothDevice device = devices.get(position);
         Log.i(TAG, "Trying to show device " + device.getName() + ' ' + device.getAddress());
         holder.deviceName.setText(device.getName());
         holder.deviceAddress.setText(device.getAddress());
+
+        // Set the click listener for the device item
+        holder.itemView.setOnClickListener(v -> {
+            if (listener != null) {
+                listener.onDeviceClick(device);
+            }
+        });
     }
 
     @Override
@@ -55,6 +64,9 @@ public class DeviceAdapter extends RecyclerView.Adapter<DeviceAdapter.ViewHolder
             deviceAddress = itemView.findViewById(R.id.device_address);
         }
     }
+
+    // Interface for handling clicks on devices
+    public interface OnDeviceClickListener {
+        void onDeviceClick(BluetoothDevice device);
+    }
 }
-
-

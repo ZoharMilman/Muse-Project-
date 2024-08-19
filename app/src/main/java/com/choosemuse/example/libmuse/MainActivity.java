@@ -45,6 +45,7 @@ import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Environment;
@@ -85,7 +86,7 @@ import com.haifa3D.haifa3d_ble_api.ble.BleService;
  * 7. You can pause/resume data transmission with the button at the bottom of the screen.
  * 8. To disconnect from the headband, press "Disconnect"
  */
-public class MainActivity extends Activity implements OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener, DeviceAdapter.OnDeviceClickListener {
 
     /**
      * Tag used for logging purposes.
@@ -236,7 +237,7 @@ public class MainActivity extends Activity implements OnClickListener {
         ensurePermissions();
 
         // Initialize the UI and BLE manager, careful to give them the same deviceList to work with
-        deviceAdapter = new DeviceAdapter(this, deviceList);
+        deviceAdapter = new DeviceAdapter(this, deviceList, this);
         bleManager = new BleManager(this, deviceAdapter, deviceList);
         initUI();
 
@@ -264,6 +265,34 @@ public class MainActivity extends Activity implements OnClickListener {
     public boolean isBluetoothEnabled() {
         return BluetoothAdapter.getDefaultAdapter().isEnabled();
     }
+
+    @Override
+    public void onDeviceClick(BluetoothDevice device) {
+        Log.d(TAG, "Selected device: " + device.getName() + " [" + device.getAddress() + "]");
+
+        // Create a BleAPICommands object and bind the service
+        BleAPICommands bleAPI = new BleAPICommands();
+        Intent intent = new Intent(this, BleService.class);
+        bleAPI.bind(new BleAPICommands.IBleListener() {
+            @Override
+            public void onConnected(BleService bleService) {
+                // Handle BLE service connection
+                Log.i(TAG, "Connected to BLE service");
+            }
+
+            @Override
+            public void onDisconnected() {
+                // Handle BLE service disconnection
+                Log.i(TAG, "Disconnected from BLE service");
+            }
+        }, this, intent);
+
+        // Connect to the selected device once the service is bound
+        bleAPI.connect(device);
+        bleManager.stopScan();
+        deviceList.clear();
+    }
+
 
     @Override
     public void onClick(View v) {
