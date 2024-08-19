@@ -21,6 +21,8 @@ public class BleManager {
     private Handler handler;
     private boolean scanning;
 
+    public boolean shouldScan = true;
+
     private List<BluetoothDevice> deviceList;
     private DeviceAdapter deviceAdapter;
 
@@ -90,6 +92,7 @@ public class BleManager {
     public boolean isScanning() {
         return scanning;
     }
+
 
     private void addDevice(BluetoothDevice device) {
         if (!deviceList.contains(device)) {

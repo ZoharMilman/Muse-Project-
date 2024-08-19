@@ -289,8 +289,12 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 
         // Connect to the selected device once the service is bound
         bleAPI.connect(device);
+//        Log.d(TAG, "Battery status: " + bleAPI.Extract_battery_status());
         bleManager.stopScan();
         deviceList.clear();
+        deviceList.add(device);
+        deviceAdapter.notifyDataSetChanged();
+        bleManager.shouldScan = false;
     }
 
 
@@ -363,6 +367,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 
         } else if (v.getId() == R.id.refresh_bluetooth) {
             // Start BLE scan on refresh button click
+            bleManager.shouldScan = true;
             bleManager.stopScan();
             Log.d(TAG, "Device list before refresh " + bleManager.getDeviceList());
             bleManager.getDeviceList().clear();
@@ -670,7 +675,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 //            }
 
             // Start BLE scan if not already scanning
-            if (!bleManager.isScanning()) {
+            if (!bleManager.isScanning() && bleManager.shouldScan) {
                 bleManager.startScan();
             }
 
