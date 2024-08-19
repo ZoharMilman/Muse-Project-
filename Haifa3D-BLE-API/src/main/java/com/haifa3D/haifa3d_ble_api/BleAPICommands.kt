@@ -66,6 +66,11 @@ class BleAPICommands() {
 
     }
 
+
+    fun isServiceConnected(): Boolean {
+        return bleService != null
+    }
+
     /**
      * this function is used to unbind the BLE service once the user is done interacting with the service
      * @param context: Context - the context in which the service will run
@@ -83,7 +88,9 @@ class BleAPICommands() {
         if(bleService?.manager?.isConnected == false){
             bleService?.bleManager?.log(Log.VERBOSE, " couldn't connect to BT device")
         }
-
+        else {
+            bleService?.bleManager?.log(Log.VERBOSE, "Connected to " + device)
+        }
     }
 
     /**

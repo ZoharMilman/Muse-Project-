@@ -204,6 +204,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
     private DeviceAdapter deviceAdapter;
     private List<BluetoothDevice> deviceList = new ArrayList<>();
 
+    private BleAPICommands bleAPI;
     //--------------------------------------
     // Lifecycle / Connection code for the muse
 
@@ -239,6 +240,28 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         // Initialize the UI and BLE manager, careful to give them the same deviceList to work with
         deviceAdapter = new DeviceAdapter(this, deviceList, this);
         bleManager = new BleManager(this, deviceAdapter, deviceList);
+
+        // Initialize the BleAPICommands object
+        bleAPI = new BleAPICommands();
+
+        // Create an Intent for the BleService
+        Intent bleServiceIntent = new Intent(this, BleService.class);
+
+        // Bind to the BLE service
+        bleAPI.bind(new BleAPICommands.IBleListener() {
+            @Override
+            public void onConnected(BleService bleService) {
+                // Handle BLE service connection
+                Log.i(TAG, "Connected to BLE service");
+            }
+
+            @Override
+            public void onDisconnected() {
+                // Handle BLE service disconnection
+                Log.i(TAG, "Disconnected from BLE service");
+            }
+        }, this, bleServiceIntent);
+
         initUI();
 
         // Start up a thread for asynchronous file operations.
@@ -270,33 +293,34 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
     public void onDeviceClick(BluetoothDevice device) {
         Log.d(TAG, "Selected device: " + device.getName() + " [" + device.getAddress() + "]");
 
-        // Create a BleAPICommands object and bind the service
-        BleAPICommands bleAPI = new BleAPICommands();
-        Intent intent = new Intent(this, BleService.class);
-        bleAPI.bind(new BleAPICommands.IBleListener() {
-            @Override
-            public void onConnected(BleService bleService) {
-                // Handle BLE service connection
-                Log.i(TAG, "Connected to BLE service");
-            }
+        // Check if the BleAPICommands object and service are properly bound
+        if (bleAPI != null && bleAPI.isServiceConnected()) {
+            Log.i(TAG, "Starting connection lifecycle");
+            // Disconnect from the current device
+            bleAPI.disconnect();
 
-            @Override
-            public void onDisconnected() {
-                // Handle BLE service disconnection
-                Log.i(TAG, "Disconnected from BLE service");
-            }
-        }, this, intent);
+            // Connect to the new device
+            bleAPI.connect(device);
 
-        // Connect to the selected device once the service is bound
-        bleAPI.connect(device);
-//        Log.d(TAG, "Battery status: " + bleAPI.Extract_battery_status());
-        bleManager.stopScan();
-        deviceList.clear();
-        deviceList.add(device);
-        deviceAdapter.notifyDataSetChanged();
-        bleManager.shouldScan = false;
+//            Log.d(TAG, "Extract battery: " + bleAPI.Extract_battery_status());
+
+            // Stop scanning and update UI
+            bleManager.stopScan();
+            deviceList.clear();
+            deviceList.add(device);
+            deviceAdapter.notifyDataSetChanged();
+            bleManager.shouldScan = false;
+        } else {
+            Log.e(TAG, "BLE service is not connected. Cannot connect to device.");
+        }
     }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Unbind the BLE service when the activity is destroyed
+        bleAPI.unbind(this);
+    }
 
     @Override
     public void onClick(View v) {

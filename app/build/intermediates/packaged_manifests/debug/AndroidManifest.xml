@@ -13,6 +13,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
     <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="no.nordicsemi.android.LOG" />
 
     <application
@@ -33,6 +34,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.BleService" />
+
         <!--
 		Service used to scan in background to emulate scanning with
 		PendingIntent on Android 4.3 - 7.x. Service will scan in background with given

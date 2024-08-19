@@ -28,6 +28,7 @@ class BleService() : NotificationService() {
     }
 
     override fun onBind(intent: Intent): IBinder? {
+
         super.onBind(intent!!)
         return binder
     }
