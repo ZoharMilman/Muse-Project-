@@ -42,7 +42,9 @@ public class BleManager {
             @Override
             public void onScanResult(int callbackType, ScanResult result) {
                 BluetoothDevice device = result.getDevice();
-                addDevice(device);
+                if (device.getName() != null){
+                    addDevice(device);
+                }
             }
 
             @Override
@@ -73,7 +75,7 @@ public class BleManager {
                 public void run() {
                     stopScan();
                 }
-            }, 10000);
+            }, 100000);
 
             scanning = true;
             bluetoothLeScanner.startScan(scanCallback);

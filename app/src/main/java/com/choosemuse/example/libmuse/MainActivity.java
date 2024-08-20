@@ -302,7 +302,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             // Connect to the new device
             bleAPI.connect(device);
 
-//            Log.d(TAG, "Extract battery: " + bleAPI.Extract_battery_status());
+//            bleAPI.Extract_battery_status();
 
             // Stop scanning and update UI
             bleManager.stopScan();
@@ -310,6 +310,9 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             deviceList.add(device);
             deviceAdapter.notifyDataSetChanged();
             bleManager.shouldScan = false;
+            Log.i(TAG, "Connection lifecycle done");
+
+
         } else {
             Log.e(TAG, "BLE service is not connected. Cannot connect to device.");
         }
@@ -398,6 +401,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             Log.d(TAG, "Device list after refresh " + bleManager.getDeviceList());
             deviceAdapter.notifyDataSetChanged();
             bleManager.startScan();
+
+        } else if (v.getId() == R.id.test_hand) {
+            Log.d(TAG, "Test Hand Pressed");
+
+            Log.d(TAG, "Extract battery: " + bleAPI.Extract_battery_status());
+            bleAPI.Hand_activation_by_preset(0);
+
+        } else if (v.getId() == R.id.disconnect_bluetooth){
+            bleAPI.disconnect();
         }
 
     }

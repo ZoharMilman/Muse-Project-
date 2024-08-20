@@ -27,6 +27,9 @@
         </activity>
 
         <service android:name="com.haifa3D.haifa3d_ble_api.ble.BleService" />
+<!--        <service android:name="com.haifa3D.haifa3d_ble_api.ble.TriggerService" />
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.PresetService" />
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.BatteryLevelService" />-->
 
     </application>
 
