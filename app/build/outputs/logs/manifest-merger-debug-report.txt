@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [:Haifa3D-BLE-API] D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\Haifa3D-BLE-API\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2de39ab276c22673e3453ba987234e89\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
@@ -66,12 +66,12 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8339f821aae107c38cc4b65147d27811\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5422fef709eca349e2aed875acd4931c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\cce2525af2e02f8d7ac91c2e57a082df\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 	android:versionName
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:4:5-30
@@ -118,7 +118,7 @@ ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibM
 	android:name
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:11:22-74
 application
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:5-34:19
+ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:5-35:19
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
@@ -165,18 +165,6 @@ service#com.haifa3D.haifa3d_ble_api.ble.BleService
 ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:29:9-78
 	android:name
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:29:18-75
-service#com.haifa3D.haifa3d_ble_api.ble.TriggerService
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:30:9-82
-	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:30:18-79
-service#com.haifa3D.haifa3d_ble_api.ble.PresetService
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:31:9-81
-	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:31:18-78
-service#com.haifa3D.haifa3d_ble_api.ble.BatteryLevelService
-ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:32:9-87
-	android:name
-		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:32:18-84
 uses-sdk
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml

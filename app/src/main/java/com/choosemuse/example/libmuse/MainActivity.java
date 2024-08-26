@@ -253,6 +253,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             public void onConnected(BleService bleService) {
                 // Handle BLE service connection
                 Log.i(TAG, "Connected to BLE service");
+//                bleService.mockConnect();
+//                testBleAPI();
             }
 
             @Override
@@ -274,8 +276,25 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         // Start our asynchronous updates of the UI.
         handler = new Handler(getMainLooper());
         handler.post(tickUi);
-
     }
+
+
+    private void testBleAPI() {
+        Log.i(TAG, "TESTING MODE");
+
+//        // Example of testing the connection
+//        BluetoothDevice mockDevice = ... // Create or get a mock BluetoothDevice
+//        bleAPI.connect(mockDevice);
+//
+//        // Test other API commands, such as triggering a preset
+//        bleAPI.Hand_activation_by_preset(0);  // Assuming preset number 0
+//
+//        // Test battery level extraction
+//        int batteryLevel = bleAPI.Extract_battery_status();
+//        Log.i(TAG, "Battery level: " + batteryLevel + "%");
+    }
+
+
 
     protected void onPause() {
         super.onPause();
@@ -302,7 +321,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             // Connect to the new device
             bleAPI.connect(device);
 
-//            bleAPI.Extract_battery_status();
+//            bleAPI.Hand_activation_by_preset(1);
+
 
             // Stop scanning and update UI
             bleManager.stopScan();
