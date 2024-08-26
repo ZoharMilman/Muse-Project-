@@ -1,9 +1,9 @@
-#Sat Feb 24 18:03:29 IST 2024
-base.0=D\:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
-base.1=D\:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
-base.2=D\:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\4\\classes.dex
-base.3=D\:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
-base.4=D\:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
+#Wed Aug 21 02:06:32 IDT 2024
+base.0=C\:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+base.1=C\:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\2\\classes.dex
+base.2=C\:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\build\\intermediates\\dex\\debug\\mergeLibDexDebug\\4\\classes.dex
+base.3=C\:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.4=C\:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\1\\classes.dex
 path.0=classes.dex
 path.1=2/classes.dex
 path.2=4/classes.dex
