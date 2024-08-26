@@ -4,7 +4,7 @@
             "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-22:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\522f153a538bd6da67840d9785ed5ce0\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-3\\dc6b408cd9be17f3a3e22c3ded29a789\\transformed\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\bbfb5ba67ae8fb6ba17cfb0ffa5f4aa9\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\david\\.gradle\\caches\\transforms-3\\194826aa80af571934aeba26b541b996\\transformed\\media-1.0.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

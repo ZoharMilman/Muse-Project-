@@ -4,14 +4,14 @@
             "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-22:/values-v14/values-v14.xml",
             "map": [
                 {
-                    "source": "D:\\TECHNION\\sem6\\Project\\Code\\libmuse_android_7.1.1\\examples\\TestLibMuseAndroid\\app\\src\\main\\res\\values-v14\\styles.xml",
+                    "source": "C:\\Users\\david\\StudioProjects\\Muse-Project-\\app\\src\\main\\res\\values-v14\\styles.xml",
                     "from": {
                         "startLines": "7",
                         "startColumns": "4",
-                        "startOffsets": "220",
+                        "startOffsets": "227",
                         "endLines": "9",
                         "endColumns": "12",
-                        "endOffsets": "366"
+                        "endOffsets": "375"
                     },
                     "to": {
                         "startLines": "2",

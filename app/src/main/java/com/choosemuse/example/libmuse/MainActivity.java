@@ -152,6 +152,8 @@ public class MainActivity extends Activity implements OnClickListener {
 
     private boolean blinkStale;
 
+    private double blink = 0;
+    private double jaw = 0;
     /**
      * We will be updating the UI using a handler instead of in packet handlers because
      * packets come in at a very high frequency and it only makes sense to update the UI
@@ -222,7 +224,7 @@ public class MainActivity extends Activity implements OnClickListener {
 
         // Start up a thread for asynchronous file operations.
         // This is only needed if you want to do File I/O.
-//        fileThread.start();
+        fileThread.start();
 
         //TODO our code. Initializes the head tilt machine.
 //        headTiltMachine = new HeadTiltStateMachine();
@@ -470,16 +472,37 @@ public class MainActivity extends Activity implements OnClickListener {
         final boolean isOn = p.getHeadbandOn();
         final boolean blinkFlag = p.getBlink();
         final boolean jawClenchFlag = p.getJawClench();
-
+        //writeArtifactPacketToFile(p);
         // Format a message to show the change of connection state in the UI.
         final String onStatus = String.valueOf(isOn);
         Log.i(TAG, onStatus);
 
-        final String blinkStatus = String.valueOf(blinkFlag);
-        Log.i(TAG, blinkStatus);
+        double x;
+        if(blinkFlag) {
+            x = 1;
+        }
+        else{
+            x = 0;
+        }
 
-        final String jawClenchStatus = String.valueOf(jawClenchFlag);
-        Log.i(TAG, jawClenchStatus);
+        blink = (blink+x)/2;
+        boolean b;
+        b = blink >= 0.5;
+        double y;
+        if(jawClenchFlag) {
+            y = 1;
+        }
+        else{
+            y = 0;
+        }
+        jaw = (jaw+y)/2;
+        boolean j;
+        j = jaw >= 0.5;
+        final String blinkStatus = String.valueOf(b);
+        Log.i(TAG, "Blink Status: " +blinkStatus);
+
+        final String jawClenchStatus = String.valueOf(j);
+        Log.i(TAG, "Jaw Status: " +jawClenchStatus);
 
         // Update the UI with the change in artifact state.
         handler.post(() -> {
@@ -707,24 +730,24 @@ public class MainActivity extends Activity implements OnClickListener {
 //     * We don't want to block the UI thread while we write to a file, so the file
 //     * writing is moved to a separate thread.
 //     */
-//    private final Thread fileThread = new Thread() {
-//        @Override
-//        public void run() {
-//            Looper.prepare();
-//            fileHandler.set(new Handler(getMainLooper()));
-//            final File dir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
-//            final File file = new File(dir, "new_muse_file.muse" );
-//            // MuseFileWriter will append to an existing file.
-//            // In this case, we want to start fresh so the file
-//            // if it exists.
-//            if (file.exists() && !file.delete()) {
-//                Log.e(TAG, "file not successfully deleted");
-//            }
-//            Log.i(TAG, "Writing data to: " + file.getAbsolutePath());
-//            fileWriter.set(MuseFileFactory.getMuseFileWriter(file));
-//            Looper.loop();
-//        }
-//    };
+    private final Thread fileThread = new Thread() {
+        @Override
+        public void run() {
+            Looper.prepare();
+            fileHandler.set(new Handler(getMainLooper()));
+            final File dir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+            final File file = new File(dir, "new_muse_file.muse" );
+            // MuseFileWriter will append to an existing file.
+            // In this case, we want to start fresh so the file
+            // if it exists.
+            if (file.exists() && !file.delete()) {
+                Log.e(TAG, "file not successfully deleted");
+            }
+            Log.i(TAG, "Writing data to: " + file.getAbsolutePath());
+            fileWriter.set(MuseFileFactory.getMuseFileWriter(file));
+            Looper.loop();
+        }
+    };
 //
 //    /**
 //     * Writes the provided MuseDataPacket to the file.  MuseFileWriter knows
@@ -739,31 +762,31 @@ public class MainActivity extends Activity implements OnClickListener {
 //    }
 //
 //    //TODO our code
-//    private void writeArtifactPacketToFile(final MuseArtifactPacket p) {
-//        Handler h = fileHandler.get();
-//        if (h != null) {
-//            h.post(() -> fileWriter.get().addArtifactPacket(0, p));
-//        }
-//    }
+    private void writeArtifactPacketToFile(final MuseArtifactPacket p) {
+        Handler h = fileHandler.get();
+        if (h != null) {
+            h.post(() -> fileWriter.get().addArtifactPacket(0, p));
+        }
+    }
 //
 //    /**
 //     * Flushes all the data to the file and closes the file writer.
 //     */
-//    private void saveFile() {
-//        Handler h = fileHandler.get();
-//        if (h != null) {
-//            h.post(() -> {
-//                MuseFileWriter w = fileWriter.get();
-//                // Annotation strings can be added to the file to
-//                // give context as to what is happening at that point in
-//                // time.  An annotation can be an arbitrary string or
-//                // may include additional AnnotationData.
-//                w.addAnnotationString(0, "Disconnected");
-//                w.flush();
-//                w.close();
-//            });
-//        }
-//    }
+    private void saveFile() {
+        Handler h = fileHandler.get();
+        if (h != null) {
+            h.post(() -> {
+                MuseFileWriter w = fileWriter.get();
+                // Annotation strings can be added to the file to
+                // give context as to what is happening at that point in
+                // time.  An annotation can be an arbitrary string or
+                // may include additional AnnotationData.
+                w.addAnnotationString(0, "Disconnected");
+                w.flush();
+                w.close();
+            });
+        }
+    }
 //
 //    /**
 //     * Reads the provided .muse file and prints the data to the logcat.
@@ -771,67 +794,67 @@ public class MainActivity extends Activity implements OnClickListener {
 //     *              is assumed to be in the Environment.DIRECTORY_DOWNLOADS
 //     *              directory.
 //     */
-//    @SuppressWarnings("unused")
-//    private void playMuseFile(String name) {
-//
-//        File dir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
-//        File file = new File(dir, name);
-//
-//        final String tag = "Muse File Reader";
-//
-//        if (!file.exists()) {
-//            Log.w(tag, "file doesn't exist");
-//            return;
-//        }
-//
-//        MuseFileReader fileReader = MuseFileFactory.getMuseFileReader(file);
-//
-//        // Loop through each message in the file.  gotoNextMessage will read the next message
-//        // and return the result of the read operation as a Result.
-//        Result res = fileReader.gotoNextMessage();
-//        while (res.getLevel() == ResultLevel.R_INFO && !res.getInfo().contains("EOF")) {
-//
-//            MessageType type = fileReader.getMessageType();
-//            int id = fileReader.getMessageId();
-//            long timestamp = fileReader.getMessageTimestamp();
-//
-//            Log.i(tag, "type: " + type.toString() +
-//                  " id: " + id +
-//                  " timestamp: " + timestamp);
-//
-//            switch(type) {
-//                // EEG messages contain raw EEG data or DRL/REF data.
-//                // EEG derived packets like ALPHA_RELATIVE and artifact packets
-//                // are stored as MUSE_ELEMENTS messages.
-//                case EEG:
-//                case BATTERY:
-//                case ACCELEROMETER:
-//                case QUANTIZATION:
-//                case GYRO:
-//                case MUSE_ELEMENTS:
-//                    MuseDataPacket packet = fileReader.getDataPacket();
-//                    Log.i(tag, "data packet: " + packet.packetType().toString());
-//                    break;
-//                case VERSION:
-//                    MuseVersion version = fileReader.getVersion();
-//                    Log.i(tag, "version" + version.getFirmwareType());
-//                    break;
-//                case CONFIGURATION:
-//                    MuseConfiguration config = fileReader.getConfiguration();
-//                    Log.i(tag, "config" + config.getBluetoothMac());
-//                    break;
-//                case ANNOTATION:
-//                    AnnotationData annotation = fileReader.getAnnotation();
-//                    Log.i(tag, "annotation" + annotation.getData());
-//                    break;
-//                default:
-//                    break;
-//            }
-//
-//            // Read the next message.
-//            res = fileReader.gotoNextMessage();
-//        }
-//    }
+    @SuppressWarnings("unused")
+    private void playMuseFile(String name) {
+
+        File dir = getExternalFilesDir(Environment.DIRECTORY_DOWNLOADS);
+        File file = new File(dir, name);
+
+        final String tag = "Muse File Reader";
+
+        if (!file.exists()) {
+            Log.w(tag, "file doesn't exist");
+            return;
+        }
+
+        MuseFileReader fileReader = MuseFileFactory.getMuseFileReader(file);
+
+        // Loop through each message in the file.  gotoNextMessage will read the next message
+        // and return the result of the read operation as a Result.
+        Result res = fileReader.gotoNextMessage();
+        while (res.getLevel() == ResultLevel.R_INFO && !res.getInfo().contains("EOF")) {
+
+            MessageType type = fileReader.getMessageType();
+            int id = fileReader.getMessageId();
+            long timestamp = fileReader.getMessageTimestamp();
+
+            Log.i(tag, "type: " + type.toString() +
+                  " id: " + id +
+                  " timestamp: " + timestamp);
+
+            switch(type) {
+                // EEG messages contain raw EEG data or DRL/REF data.
+                // EEG derived packets like ALPHA_RELATIVE and artifact packets
+                // are stored as MUSE_ELEMENTS messages.
+                case EEG:
+                case BATTERY:
+                case ACCELEROMETER:
+                case QUANTIZATION:
+                case GYRO:
+                case MUSE_ELEMENTS:
+                    MuseDataPacket packet = fileReader.getDataPacket();
+                    Log.i(tag, "data packet: " + packet.packetType().toString());
+                    break;
+                case VERSION:
+                    MuseVersion version = fileReader.getVersion();
+                    Log.i(tag, "version" + version.getFirmwareType());
+                    break;
+                case CONFIGURATION:
+                    MuseConfiguration config = fileReader.getConfiguration();
+                    Log.i(tag, "config" + config.getBluetoothMac());
+                    break;
+                case ANNOTATION:
+                    AnnotationData annotation = fileReader.getAnnotation();
+                    Log.i(tag, "annotation" + annotation.getData());
+                    break;
+                default:
+                    break;
+            }
+
+            // Read the next message.
+            res = fileReader.gotoNextMessage();
+        }
+    }
 
     //--------------------------------------
     // Listener translators
