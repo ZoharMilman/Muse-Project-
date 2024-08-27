@@ -22,6 +22,7 @@ public class HandCommands {
 
     private int currentPreset;
 
+    public boolean enable = false;
 
     public HandCommands(BleManager bleManager){
         this.bleManager = bleManager;

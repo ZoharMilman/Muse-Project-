@@ -21,6 +21,7 @@
 
     <string name="test_hand">Send Test Packet</string>
     <string name="ble_con_status">Ble Connected:</string>
+    <string name="hand_enabled">Is Hand Enabled</string>
 
     <string name="permission_dialog_title">Muse Needs Your Permission</string>
     <string name="permission_dialog_description">Muse needs a few permissions to work properly. On the next screens, tap "Allow" to proceed. If you deny, Muse will not work properly until you go into your Android settings and allow.</string>

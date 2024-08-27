@@ -129,9 +129,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
      */
     private DataListener dataListener;
 
-
-
-
     /**
      * Data comes in from the headband at a very fast rate; 220Hz, 256Hz or 500Hz,
      * depending on the type of headband and the preset configuration.  We buffer the
@@ -169,6 +166,15 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 
     private double blink = 0;
     private double jaw = 0;
+
+    private boolean prev_b = false;
+
+    private int jawClenchCooldown;
+
+    private int blinkCooldown;
+
+    private int blinkChanges;
+
     /**
      * We will be updating the UI using a handler instead of in packet handlers because
      * packets come in at a very high frequency and it only makes sense to update the UI
@@ -567,9 +573,18 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
     @SuppressWarnings("unused")
     public void receiveMuseArtifactPacket(final MuseArtifactPacket p, final Muse muse) {
         //TODO our code
+        final int jawClenchCooldownWindow = 10;
+        final int blinkCooldownWindow = 10;
         final boolean isOn = p.getHeadbandOn();
         final boolean blinkFlag = p.getBlink();
         final boolean jawClenchFlag = p.getJawClench();
+
+
+        jawClenchCooldown = jawClenchCooldown + 1;
+        blinkCooldown = blinkCooldown + 1;
+
+
+//        int jawClenchCounter = 0;
         //writeArtifactPacketToFile(p);
         // Format a message to show the change of connection state in the UI.
         final String onStatus = String.valueOf(isOn);
@@ -583,9 +598,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             x = 0;
         }
 
-        blink = (blink+x)/2;
+        blink = (blink*0.6+x*0.4);
         boolean b;
         b = blink >= 0.5;
+
         double y;
         if(jawClenchFlag) {
             y = 1;
@@ -593,11 +609,34 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         else{
             y = 0;
         }
-        jaw = (jaw+y)/2;
+        jaw = (jaw*0.9+y*0.1);
         boolean j;
         j = jaw >= 0.5;
 
-        if (j){
+        if ((b || blinkChanges>=1) && blinkCooldown <= blinkCooldownWindow) {
+            if (b != prev_b) {
+                blinkChanges++;
+                Log.d(TAG, "Blink changes count: " + blinkChanges);
+            }
+        }
+
+        if (blinkCooldown >= blinkCooldownWindow) {
+            blinkChanges = 0;
+            blinkCooldown = 0;
+        }
+
+        if (blinkChanges == 3) {
+            blinkChanges = 0;
+            blinkCooldown = 0;
+            Log.d(TAG, "Kill me");
+            handCommands.enable = !handCommands.enable;
+        }
+
+        prev_b = b;
+
+
+        if (handCommands.enable && j && jawClenchCooldown >= jawClenchCooldownWindow){
+            jawClenchCooldown = 0;
             int currentPreset = handCommands.getCurrentPreset();
             // If clenched, release
             if (currentPreset == 1) {
@@ -751,6 +790,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 //            }
 
             update_ble_connection_state();
+            update_is_hand_enabled();
 
             // Start BLE scan if not already scanning
             if (!bleManager.isScanning() && bleManager.shouldScan) {
@@ -809,6 +849,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
     private void update_ble_connection_state(){
         final TextView bleStatusText = findViewById(R.id.ble_con_status);
         bleStatusText.setText(String.valueOf(bleManager.isDeviceConnected()));
+    }
+
+    private void update_is_hand_enabled(){
+        final TextView isHandEnabled = findViewById(R.id.is_hand_enabled);
+        isHandEnabled.setText(String.valueOf(handCommands.enable));
     }
 
     //This is a state machine implementation for the gyro toggle logic.
