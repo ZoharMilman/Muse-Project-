@@ -20,6 +20,8 @@ public class HandCommands {
 
     private BleManager bleManager;
 
+    private int currentPreset;
+
 
     public HandCommands(BleManager bleManager){
         this.bleManager = bleManager;
@@ -71,10 +73,14 @@ public class HandCommands {
 
         // Log the result
         if (success) {
+            currentPreset = preset;
             Log.d(TAG, "Successfully wrote to characteristic " + triggerCharacteristicUUID);
         } else {
             Log.e(TAG, "Failed to write to characteristic " + triggerCharacteristicUUID);
         }
     }
 
+    public int getCurrentPreset(){
+        return currentPreset;
+    }
 }

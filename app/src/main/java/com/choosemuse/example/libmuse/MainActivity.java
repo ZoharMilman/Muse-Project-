@@ -596,6 +596,19 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         jaw = (jaw+y)/2;
         boolean j;
         j = jaw >= 0.5;
+
+        if (j){
+            int currentPreset = handCommands.getCurrentPreset();
+            // If clenched, release
+            if (currentPreset == 1) {
+                handCommands.handActivatePreset(0);
+            }
+            // If open, clench
+            if (currentPreset == 0) {
+                handCommands.handActivatePreset(1);
+            }
+        }
+
         final String blinkStatus = String.valueOf(b);
         Log.i(TAG, "Blink Status: " +blinkStatus);
 
