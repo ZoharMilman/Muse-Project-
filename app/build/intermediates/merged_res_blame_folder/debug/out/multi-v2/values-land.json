@@ -4,7 +4,7 @@
             "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-22:/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\bd8e6e6c6e97fd80e1370557cf2e614e\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\5ebeac75a1809e3edded32e311946465\\transformed\\material-1.0.0\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\522f153a538bd6da67840d9785ed5ce0\\transformed\\appcompat-1.3.1\\res\\values-land\\values-land.xml",
+                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\2bd4e31b61bdaaccf221ab58833869e0\\transformed\\appcompat-1.3.1\\res\\values-land\\values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

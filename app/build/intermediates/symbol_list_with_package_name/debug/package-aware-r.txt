@@ -1314,6 +1314,7 @@ id barrier
 id baseline
 id beginOnFirstDraw
 id beginning
+id ble_con_status
 id blink_status
 id blocking
 id bottom
@@ -1710,6 +1711,7 @@ string action_settings
 string app_name
 string appbar_scrolling_view_behavior
 string artifacts
+string ble_con_status
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
@@ -1725,6 +1727,7 @@ string init_val
 string msg_count
 string mtrl_chip_close_icon_content_description
 string muse_elem
+string muse_status
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string password_toggle_content_description
@@ -1738,8 +1741,8 @@ string permission_dialog_title
 string permission_dialog_understand
 string refresh
 string search_menu_title
-string status
 string status_bar_notification_info_overflow
+string test_hand
 string undefined
 string version
 style AlertDialog_AppCompat

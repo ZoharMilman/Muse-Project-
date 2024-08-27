@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import java.util.Locale;
+import java.util.UUID;
 import java.util.concurrent.atomic.AtomicReference;
 
 import com.choosemuse.libmuse.Accelerometer;
@@ -42,6 +43,9 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothGatt;
+import android.bluetooth.BluetoothGattCharacteristic;
+import android.bluetooth.BluetoothGattService;
 import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -66,8 +70,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 // Importing the BLE interface from haifa3D
-import com.haifa3D.haifa3d_ble_api.BleAPICommands;
-import com.haifa3D.haifa3d_ble_api.ble.BleService;
+//import com.haifa3D.haifa3d_ble_api.BleAPICommands;
+//import com.haifa3D.haifa3d_ble_api.ble.BleService;
 
 /**
  * This example will illustrate how to connect to a Muse headband,
@@ -202,11 +206,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
      * This is BLE related variables
      *
      */
+    private HandCommands handCommands;
     private BleManager bleManager;
     private DeviceAdapter deviceAdapter;
     private List<BluetoothDevice> deviceList = new ArrayList<>();
 
-    private BleAPICommands bleAPI;
     //--------------------------------------
     // Lifecycle / Connection code for the muse
 
@@ -242,29 +246,7 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         // Initialize the UI and BLE manager, careful to give them the same deviceList to work with
         deviceAdapter = new DeviceAdapter(this, deviceList, this);
         bleManager = new BleManager(this, deviceAdapter, deviceList);
-
-        // Initialize the BleAPICommands object
-        bleAPI = new BleAPICommands();
-
-        // Create an Intent for the BleService
-        Intent bleServiceIntent = new Intent(this, BleService.class);
-
-        // Bind to the BLE service
-        bleAPI.bind(new BleAPICommands.IBleListener() {
-            @Override
-            public void onConnected(BleService bleService) {
-                // Handle BLE service connection
-                Log.i(TAG, "Connected to BLE service");
-//                bleService.mockConnect();
-//                testBleAPI();
-            }
-
-            @Override
-            public void onDisconnected() {
-                // Handle BLE service disconnection
-                Log.i(TAG, "Disconnected from BLE service");
-            }
-        }, this, bleServiceIntent);
+        handCommands = new HandCommands(bleManager);
 
         initUI();
 
@@ -280,21 +262,6 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         handler.post(tickUi);
     }
 
-
-    private void testBleAPI() {
-        Log.i(TAG, "TESTING MODE");
-
-//        // Example of testing the connection
-//        BluetoothDevice mockDevice = ... // Create or get a mock BluetoothDevice
-//        bleAPI.connect(mockDevice);
-//
-//        // Test other API commands, such as triggering a preset
-//        bleAPI.Hand_activation_by_preset(0);  // Assuming preset number 0
-//
-//        // Test battery level extraction
-//        int batteryLevel = bleAPI.Extract_battery_status();
-//        Log.i(TAG, "Battery level: " + batteryLevel + "%");
-    }
 
 
 
@@ -312,39 +279,38 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 
     @Override
     public void onDeviceClick(BluetoothDevice device) {
-        Log.d(TAG, "Selected device: " + device.getName() + " [" + device.getAddress() + "]");
-
-        // Check if the BleAPICommands object and service are properly bound
-        if (bleAPI != null && bleAPI.isServiceConnected()) {
-            Log.i(TAG, "Starting connection lifecycle");
-            // Disconnect from the current device
-            bleAPI.disconnect();
-
-            // Connect to the new device
-            bleAPI.connect(device);
-
-//            bleAPI.Hand_activation_by_preset(1);
+        String LOCAL_TAG = "onDeviceClick";
+        Log.d(LOCAL_TAG, "Selected device: " + device.getName() + " [" + device.getAddress() + "]");
 
 
-            // Stop scanning and update UI
-            bleManager.stopScan();
-            deviceList.clear();
-            deviceList.add(device);
-            deviceAdapter.notifyDataSetChanged();
-            bleManager.shouldScan = false;
-            Log.i(TAG, "Connection lifecycle done");
+        Log.i(LOCAL_TAG, "Starting connection lifecycle");
 
-
-        } else {
-            Log.e(TAG, "BLE service is not connected. Cannot connect to device.");
+        // Disconnect from the current device
+        if (bleManager.isDeviceConnected()) {
+            Log.i(LOCAL_TAG, "Disconnecting from current device...");
+            bleManager.disconnectFromDevice();
         }
+
+        // Connect to the new device
+        Log.i(LOCAL_TAG, "Connecting to new device...");
+
+        bleManager.connectToDevice(device);
+
+        // Stop scanning and update UI
+        bleManager.stopScan();
+        deviceList.clear();
+        deviceList.add(device);
+        deviceAdapter.notifyDataSetChanged();
+        bleManager.shouldScan = false;
+        Log.i(LOCAL_TAG, "Connection lifecycle done");
+
+
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        // Unbind the BLE service when the activity is destroyed
-        bleAPI.unbind(this);
+
     }
 
     @Override
@@ -415,6 +381,10 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             }
 
         } else if (v.getId() == R.id.refresh_bluetooth) {
+            Log.d(TAG, "Refreshing Bluetooth");
+            // Disconnect from current device if connected
+            if (bleManager.isDeviceConnected()) { bleManager.disconnectFromDevice(); }
+
             // Start BLE scan on refresh button click
             bleManager.shouldScan = true;
             bleManager.stopScan();
@@ -425,16 +395,28 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
             bleManager.startScan();
 
         } else if (v.getId() == R.id.test_hand) {
-            Log.d(TAG, "Test Hand Pressed");
+            Log.d(TAG, "Sending Test packet");
+//            handCommands.handActivatePreset(0);
+            // This activates all presets in 5 second intervals, resetting after each one
 
-            Log.d(TAG, "Extract battery: " + bleAPI.Extract_battery_status());
-            bleAPI.Hand_activation_by_preset(0);
-
-        } else if (v.getId() == R.id.disconnect_bluetooth){
-            bleAPI.disconnect();
+            for (int i = 1; i < 12; i++){
+                handCommands.handActivatePreset(0);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                handCommands.handActivatePreset(i);
+                try {
+                    Thread.sleep(5000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
         }
-
     }
+
+
 
 
     //--------------------------------------
@@ -711,6 +693,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         // Button for refreshing devices
         Button bluetoothRefreshButton = findViewById(R.id.refresh_bluetooth);
         bluetoothRefreshButton.setOnClickListener(this);
+        Button testHandButton = findViewById(R.id.test_hand);
+        testHandButton.setOnClickListener(this);
 
         // Recycler view for showing devices
 
@@ -752,6 +736,8 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
 //            if (blinkStale) {
 //                updateBlinkFlag();
 //            }
+
+            update_ble_connection_state();
 
             // Start BLE scan if not already scanning
             if (!bleManager.isScanning() && bleManager.shouldScan) {
@@ -805,6 +791,11 @@ public class MainActivity extends Activity implements View.OnClickListener, Devi
         gyro_x.setText(String.format(Locale.getDefault(), "%6.2f", gyroBuffer[0]));
         gyro_y.setText(String.format(Locale.getDefault(), "%6.2f", gyroBuffer[1]));
         gyro_z.setText(String.format(Locale.getDefault(), "%6.2f", gyroBuffer[2]));
+    }
+
+    private void update_ble_connection_state(){
+        final TextView bleStatusText = findViewById(R.id.ble_con_status);
+        bleStatusText.setText(String.valueOf(bleManager.isDeviceConnected()));
     }
 
     //This is a state machine implementation for the gyro toggle logic.

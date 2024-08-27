@@ -5,67 +5,67 @@ INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestL
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [:Haifa3D-BLE-API] D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\Haifa3D-BLE-API\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2de39ab276c22673e3453ba987234e89\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\a9b5f6aa1842df48d84dc40d47f42a48\transformed\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\522f153a538bd6da67840d9785ed5ce0\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\b0b642e2aba3401846d3ac4808e0ac51\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
-MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\24d9190cb348db536565aad175f3bdcd\transformed\ble-livedata-2.2.0\AndroidManifest.xml:2:1-10:12
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:2:1-51:12
-MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:31:1-42:12
-MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4da7c5005a8c59a0ec18f52e533fc696\transformed\ble-common-2.2.0\AndroidManifest.xml:2:1-10:12
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\f040b82da228f681bd8bb5adac67b197\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\09c43008d3e80d0f6a53f755f1e9a321\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\279c11db80130997d517b95b4d13433c\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\8f0bbf9154355f21e993cfa015bdac01\transformed\activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\63c8e2a660f7ddbbfd2c089d6df6f5a5\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\e41ada69a1446073cdca3c61c56a4be9\transformed\core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8f81a22d7fb4d14db4b666365076706a\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4d0596fbe33bbd35482dffcee2d8291e\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\65d115ebbd88a5c53471d9d8cc9a2cc4\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\83aad51a098d8df26dc9962358c279a8\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\cfa22a20c989d2f7f823c9b4e0b87dbe\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e57a481db51e567bb069bfd4dbf88f4d\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\7b0675842ca6f0bcba1f1658b543fc4b\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\eb818c1b9ca2052d9664c7fd589bab7c\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd4d2588502f70f1b2b9488f78287ee2\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6a191fce195a4429a04bb08acbf61ea3\transformed\drawerlayout-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bed3b456a851fce3f5fcd9399b8e39c8\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\78e82c01acdb26ddb4546d4c3f62025e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0af0dc78549e3c034f053ca90604215c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bc87168fc8a29290a353e23fa05e142c\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\35a88cd474514fb78c7e4a4db29aa740\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bbfb5ba67ae8fb6ba17cfb0ffa5f4aa9\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ffca2006be95eec8df9eadf1eae9fdd\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\32c8f9c16df90abd7deee401803bfbc3\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\583509db26d30919dffeabd571954d3a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\07dfc890a667c20bd7fc05789349e22c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\dc8145da8f55ff533c92e1009c1e7008\transformed\navigation-common-2.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3e66b74723e2934221edf45b0a1d0e26\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0f6ac186b5046d43356adb1f28945bce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\21f39e95eb40bf8fb22a184c05bdfc9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\53a862d989d6dcc4be246a024ce11a8b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\c2d81cf5cfa9b22e0f8e147d548a5db0\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\b1dcfbe3fa69671e8dca0c37efd9866b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f5fdc20b8f27a3eed68d370f6d9d19f1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\fdac3fdaff6aa4be18122d044c27626f\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\f160c33f5ca58f1cedfe96a5cf290c93\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:2:1-13:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\cbdb8c334f0fc4c6c8d42ca49bb05c21\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\7d28312ea929b81541979195bfcb17cd\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\ef5abe5360d7af25e764cce434be709e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\ae7cf1927c3d58261fe6c4a8036d903b\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\201649ce455deb1a633db6bbec805916\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3bc0d84ea54cedcf4f7c359ada3c9a94\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ada3a0374ee6cc883702f16153b7677\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8a10d8e97aaacd031d01c46ce1551c8c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c62f0fc749d7cda10e68844794bd68a7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8339f821aae107c38cc4b65147d27811\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5422fef709eca349e2aed875acd4931c\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\cce2525af2e02f8d7ac91c2e57a082df\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\1a84fef3f0bcf43123e8100b87e186de\transformed\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\57010a671d645b6f487f0a876bf44b05\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2eb5dc6c7745dd8c770235665287fde5\transformed\navigation-ui-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5ebeac75a1809e3edded32e311946465\transformed\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\2bd4e31b61bdaaccf221ab58833869e0\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\39d6974b53a635da60019fb90a084bf4\transformed\recyclerview-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\86976823accf6263869f443a15a63d75\transformed\ble-livedata-2.2.0\AndroidManifest.xml:2:1-10:12
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:2:1-51:12
+MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f69a66fc99022a94ed3dc1b7b35093d6\transformed\log-2.2.0\AndroidManifest.xml:31:1-42:12
+MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\dce8cdad385d46414e84a68acbc60097\transformed\ble-common-2.2.0\AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b68c8d79f545e25bb79ddc4a45bf7c2c\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\f1968e0ab6308029086d23c38134878a\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b130f294b5d6bb844fd9c9dab906aa34\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\7a9f5c41483c7e842f3108b48093e455\transformed\activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\5b082dfe09941c26d565ab55a5bdafc1\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\351dc9c8aa4197a381049c89dabf6b90\transformed\core-ktx-1.3.1\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8961029b2c46bbb85ff0ef0323e17f59\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\0bbd35a3aafa7cb79351da2d8f4d6854\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b4ab6a9e1a3a8096125fdfc16c5db33f\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\4c668037e9d87a07e7e32749db9b9cb0\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\6ba6364a8e9e01d4b5cd950d2004fc3b\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b64b4ca5131f6ef425c87067c9862206\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\9b0c4dcff3080e2fcd6d425f123c4ae3\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\658aa87b0117781497c61ea90c58b18b\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c683a7b24c364120f8de7f238068132f\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6ab71aad3e00dbf0345591c12747df24\transformed\drawerlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5b938fb8e53acec5293027438f259c2f\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\43d279a94d08db1479908a2b3949db5b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\94d693f0eec4bb58a966a73cd2a0f5f6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\fc1cf7ae84f6230fe43eb356f98c18c6\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e7c57cb67e471cfe103455c3c84c3b33\transformed\transition-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\ecfbb14d11695619f943c5295e44e651\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0437e2003babd99ef6d3fab91e82cae2\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\e48c353c6f1d28565aac2a0b4cef3c71\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\b9c284ca233e4c15d13c28f7c505fafc\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bf3d923ff77453ac8276873a72f39cbb\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\8c863b6ec05c7ee17c0d5a0145e736b9\transformed\navigation-common-2.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3c90abbe6d05892a1eaa9640b713cfa6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\dfed2954d6a1b49fe4364ac447a711c4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d9f756eaa24b9faa65f1a45467a1a92e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\7df6411d89e1431b1a926711eb52bf2b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\2a602c078cb39d0f8b9216e7f886e302\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\72f960e9f3e432c775b62729b4241337\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\45bc0137f9591bf71c5d8e22feb00754\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\152558186ee20480fbc591db1c4645d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\86b0813d1f98794a614e099d0ecb271c\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\c53d956ca31b54d6b700c7ecb92482b3\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\554d1388de07810b693dea6d0a9cfaa6\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\4fec6bcdddc94420ca62331d95107f7d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\71137f1184afc59c1804a601d9149aeb\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\8289e9e0bb2a0ab6abbb529b76a82876\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\a54a270f264e5987fea7151c37dfa967\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\aa7e8d0f1eaf734b5f129adf68648bc4\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\6c690d69cb7671b92ae816d8b2223a5c\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d0cd42fd3cb328ca216c59b89c34e15c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\28f58c72c852ab87da1465b2b6bb79a3\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\90296386b51d57ce2dcbbd49e0d9b12e\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\302da916512acffdfe6fe2468eb767f0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:2:1-37:12
@@ -85,24 +85,24 @@ INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestL
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.BLUETOOTH
 ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:5-67
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:16:5-68
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:10:5-68
 	android:name
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
 ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:5-73
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:17:5-74
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:11:5-74
 	android:name
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:7:22-71
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:5-78
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:22:5-79
 	android:name
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:8:22-76
 uses-permission#android.permission.BLUETOOTH_SCAN
@@ -119,22 +119,22 @@ ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibM
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:11:22-74
 application
 ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:13:5-35:19
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:24:5-49:19
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:24:5-49:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4d0596fbe33bbd35482dffcee2d8291e\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4d0596fbe33bbd35482dffcee2d8291e\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\201649ce455deb1a633db6bbec805916\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\201649ce455deb1a633db6bbec805916\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\1a84fef3f0bcf43123e8100b87e186de\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\1a84fef3f0bcf43123e8100b87e186de\transformed\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5ebeac75a1809e3edded32e311946465\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5ebeac75a1809e3edded32e311946465\transformed\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:24:5-49:19
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:24:5-49:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\0bbd35a3aafa7cb79351da2d8f4d6854\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\0bbd35a3aafa7cb79351da2d8f4d6854\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\8289e9e0bb2a0ab6abbb529b76a82876\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\8289e9e0bb2a0ab6abbb529b76a82876\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:label
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml:16:9-41
 	android:icon
@@ -171,128 +171,128 @@ INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestL
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 MERGED from [:Haifa3D-BLE-API] D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\Haifa3D-BLE-API\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:Haifa3D-BLE-API] D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\Haifa3D-BLE-API\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\b46a1b7b52447e9e5ed3ebaa053fcc88\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2de39ab276c22673e3453ba987234e89\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2de39ab276c22673e3453ba987234e89\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\a9b5f6aa1842df48d84dc40d47f42a48\transformed\navigation-ui-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\a9b5f6aa1842df48d84dc40d47f42a48\transformed\navigation-ui-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd8e6e6c6e97fd80e1370557cf2e614e\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\522f153a538bd6da67840d9785ed5ce0\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\522f153a538bd6da67840d9785ed5ce0\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\b0b642e2aba3401846d3ac4808e0ac51\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\b0b642e2aba3401846d3ac4808e0ac51\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
-MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\24d9190cb348db536565aad175f3bdcd\transformed\ble-livedata-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\24d9190cb348db536565aad175f3bdcd\transformed\ble-livedata-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:8:5-10:41
-MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:8:5-10:41
-MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:36:5-38:41
-MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:36:5-38:41
-MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4da7c5005a8c59a0ec18f52e533fc696\transformed\ble-common-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4da7c5005a8c59a0ec18f52e533fc696\transformed\ble-common-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\f040b82da228f681bd8bb5adac67b197\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\f040b82da228f681bd8bb5adac67b197\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\09c43008d3e80d0f6a53f755f1e9a321\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\09c43008d3e80d0f6a53f755f1e9a321\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\279c11db80130997d517b95b4d13433c\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\279c11db80130997d517b95b4d13433c\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\8f0bbf9154355f21e993cfa015bdac01\transformed\activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\8f0bbf9154355f21e993cfa015bdac01\transformed\activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\63c8e2a660f7ddbbfd2c089d6df6f5a5\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\63c8e2a660f7ddbbfd2c089d6df6f5a5\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\e41ada69a1446073cdca3c61c56a4be9\transformed\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\e41ada69a1446073cdca3c61c56a4be9\transformed\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8f81a22d7fb4d14db4b666365076706a\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8f81a22d7fb4d14db4b666365076706a\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4d0596fbe33bbd35482dffcee2d8291e\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\4d0596fbe33bbd35482dffcee2d8291e\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\65d115ebbd88a5c53471d9d8cc9a2cc4\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\65d115ebbd88a5c53471d9d8cc9a2cc4\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\83aad51a098d8df26dc9962358c279a8\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\83aad51a098d8df26dc9962358c279a8\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\cfa22a20c989d2f7f823c9b4e0b87dbe\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\cfa22a20c989d2f7f823c9b4e0b87dbe\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e57a481db51e567bb069bfd4dbf88f4d\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e57a481db51e567bb069bfd4dbf88f4d\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\7b0675842ca6f0bcba1f1658b543fc4b\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\7b0675842ca6f0bcba1f1658b543fc4b\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\eb818c1b9ca2052d9664c7fd589bab7c\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\eb818c1b9ca2052d9664c7fd589bab7c\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd4d2588502f70f1b2b9488f78287ee2\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bd4d2588502f70f1b2b9488f78287ee2\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6a191fce195a4429a04bb08acbf61ea3\transformed\drawerlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6a191fce195a4429a04bb08acbf61ea3\transformed\drawerlayout-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bed3b456a851fce3f5fcd9399b8e39c8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bed3b456a851fce3f5fcd9399b8e39c8\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\78e82c01acdb26ddb4546d4c3f62025e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\78e82c01acdb26ddb4546d4c3f62025e\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0af0dc78549e3c034f053ca90604215c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0af0dc78549e3c034f053ca90604215c\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bc87168fc8a29290a353e23fa05e142c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bc87168fc8a29290a353e23fa05e142c\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\35a88cd474514fb78c7e4a4db29aa740\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\35a88cd474514fb78c7e4a4db29aa740\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bbfb5ba67ae8fb6ba17cfb0ffa5f4aa9\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\bbfb5ba67ae8fb6ba17cfb0ffa5f4aa9\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ffca2006be95eec8df9eadf1eae9fdd\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ffca2006be95eec8df9eadf1eae9fdd\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\32c8f9c16df90abd7deee401803bfbc3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\32c8f9c16df90abd7deee401803bfbc3\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\583509db26d30919dffeabd571954d3a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\583509db26d30919dffeabd571954d3a\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\07dfc890a667c20bd7fc05789349e22c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\07dfc890a667c20bd7fc05789349e22c\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\dc8145da8f55ff533c92e1009c1e7008\transformed\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\dc8145da8f55ff533c92e1009c1e7008\transformed\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3e66b74723e2934221edf45b0a1d0e26\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3e66b74723e2934221edf45b0a1d0e26\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0f6ac186b5046d43356adb1f28945bce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0f6ac186b5046d43356adb1f28945bce\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\48fa7daaff38254a585fc8b5ad6b106f\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\21f39e95eb40bf8fb22a184c05bdfc9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\21f39e95eb40bf8fb22a184c05bdfc9d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\53a862d989d6dcc4be246a024ce11a8b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\53a862d989d6dcc4be246a024ce11a8b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\c2d81cf5cfa9b22e0f8e147d548a5db0\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\c2d81cf5cfa9b22e0f8e147d548a5db0\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\b1dcfbe3fa69671e8dca0c37efd9866b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\b1dcfbe3fa69671e8dca0c37efd9866b\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f5fdc20b8f27a3eed68d370f6d9d19f1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f5fdc20b8f27a3eed68d370f6d9d19f1\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\fdac3fdaff6aa4be18122d044c27626f\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\fdac3fdaff6aa4be18122d044c27626f\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\f160c33f5ca58f1cedfe96a5cf290c93\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\f160c33f5ca58f1cedfe96a5cf290c93\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\21cbc9fc5f941adb257787171a9736e7\transformed\ble-2.2.0\AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\cbdb8c334f0fc4c6c8d42ca49bb05c21\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\cbdb8c334f0fc4c6c8d42ca49bb05c21\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\7d28312ea929b81541979195bfcb17cd\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\7d28312ea929b81541979195bfcb17cd\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\ef5abe5360d7af25e764cce434be709e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\ef5abe5360d7af25e764cce434be709e\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\ae7cf1927c3d58261fe6c4a8036d903b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\ae7cf1927c3d58261fe6c4a8036d903b\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\201649ce455deb1a633db6bbec805916\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\201649ce455deb1a633db6bbec805916\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3bc0d84ea54cedcf4f7c359ada3c9a94\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3bc0d84ea54cedcf4f7c359ada3c9a94\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ada3a0374ee6cc883702f16153b7677\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\9ada3a0374ee6cc883702f16153b7677\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8a10d8e97aaacd031d01c46ce1551c8c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8a10d8e97aaacd031d01c46ce1551c8c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c62f0fc749d7cda10e68844794bd68a7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c62f0fc749d7cda10e68844794bd68a7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8339f821aae107c38cc4b65147d27811\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\8339f821aae107c38cc4b65147d27811\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5422fef709eca349e2aed875acd4931c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5422fef709eca349e2aed875acd4931c\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\cce2525af2e02f8d7ac91c2e57a082df\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\cce2525af2e02f8d7ac91c2e57a082df\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\1a84fef3f0bcf43123e8100b87e186de\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\zorik\.gradle\caches\transforms-3\1a84fef3f0bcf43123e8100b87e186de\transformed\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\57010a671d645b6f487f0a876bf44b05\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\57010a671d645b6f487f0a876bf44b05\transformed\navigation-ui-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2eb5dc6c7745dd8c770235665287fde5\transformed\navigation-ui-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\2eb5dc6c7745dd8c770235665287fde5\transformed\navigation-ui-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5ebeac75a1809e3edded32e311946465\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5ebeac75a1809e3edded32e311946465\transformed\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\2bd4e31b61bdaaccf221ab58833869e0\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\2bd4e31b61bdaaccf221ab58833869e0\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\39d6974b53a635da60019fb90a084bf4\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.2.1] C:\Users\zorik\.gradle\caches\transforms-3\39d6974b53a635da60019fb90a084bf4\transformed\recyclerview-1.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\86976823accf6263869f443a15a63d75\transformed\ble-livedata-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [no.nordicsemi.android:ble-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\86976823accf6263869f443a15a63d75\transformed\ble-livedata-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:8:5-10:41
+MERGED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:8:5-10:41
+MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f69a66fc99022a94ed3dc1b7b35093d6\transformed\log-2.2.0\AndroidManifest.xml:36:5-38:41
+MERGED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f69a66fc99022a94ed3dc1b7b35093d6\transformed\log-2.2.0\AndroidManifest.xml:36:5-38:41
+MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\dce8cdad385d46414e84a68acbc60097\transformed\ble-common-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [no.nordicsemi.android:ble-common:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\dce8cdad385d46414e84a68acbc60097\transformed\ble-common-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b68c8d79f545e25bb79ddc4a45bf7c2c\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b68c8d79f545e25bb79ddc4a45bf7c2c\transformed\navigation-fragment-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\f1968e0ab6308029086d23c38134878a\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\zorik\.gradle\caches\transforms-3\f1968e0ab6308029086d23c38134878a\transformed\fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b130f294b5d6bb844fd9c9dab906aa34\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b130f294b5d6bb844fd9c9dab906aa34\transformed\navigation-runtime-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\7a9f5c41483c7e842f3108b48093e455\transformed\activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\7a9f5c41483c7e842f3108b48093e455\transformed\activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\5b082dfe09941c26d565ab55a5bdafc1\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\5b082dfe09941c26d565ab55a5bdafc1\transformed\navigation-common-ktx-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\351dc9c8aa4197a381049c89dabf6b90\transformed\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\351dc9c8aa4197a381049c89dabf6b90\transformed\core-ktx-1.3.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8961029b2c46bbb85ff0ef0323e17f59\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\8961029b2c46bbb85ff0ef0323e17f59\transformed\lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\0bbd35a3aafa7cb79351da2d8f4d6854\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\0bbd35a3aafa7cb79351da2d8f4d6854\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b4ab6a9e1a3a8096125fdfc16c5db33f\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b4ab6a9e1a3a8096125fdfc16c5db33f\transformed\navigation-fragment-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\4c668037e9d87a07e7e32749db9b9cb0\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\4c668037e9d87a07e7e32749db9b9cb0\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\6ba6364a8e9e01d4b5cd950d2004fc3b\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\zorik\.gradle\caches\transforms-3\6ba6364a8e9e01d4b5cd950d2004fc3b\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b64b4ca5131f6ef425c87067c9862206\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\b64b4ca5131f6ef425c87067c9862206\transformed\navigation-runtime-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\9b0c4dcff3080e2fcd6d425f123c4ae3\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\zorik\.gradle\caches\transforms-3\9b0c4dcff3080e2fcd6d425f123c4ae3\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\658aa87b0117781497c61ea90c58b18b\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\zorik\.gradle\caches\transforms-3\658aa87b0117781497c61ea90c58b18b\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c683a7b24c364120f8de7f238068132f\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\c683a7b24c364120f8de7f238068132f\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6ab71aad3e00dbf0345591c12747df24\transformed\drawerlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\6ab71aad3e00dbf0345591c12747df24\transformed\drawerlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5b938fb8e53acec5293027438f259c2f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\5b938fb8e53acec5293027438f259c2f\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\43d279a94d08db1479908a2b3949db5b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\43d279a94d08db1479908a2b3949db5b\transformed\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\94d693f0eec4bb58a966a73cd2a0f5f6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\94d693f0eec4bb58a966a73cd2a0f5f6\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\fc1cf7ae84f6230fe43eb356f98c18c6\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\fc1cf7ae84f6230fe43eb356f98c18c6\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e7c57cb67e471cfe103455c3c84c3b33\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.3.0] C:\Users\zorik\.gradle\caches\transforms-3\e7c57cb67e471cfe103455c3c84c3b33\transformed\transition-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\ecfbb14d11695619f943c5295e44e651\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\ecfbb14d11695619f943c5295e44e651\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0437e2003babd99ef6d3fab91e82cae2\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\0437e2003babd99ef6d3fab91e82cae2\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\e48c353c6f1d28565aac2a0b4cef3c71\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\e48c353c6f1d28565aac2a0b4cef3c71\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\b9c284ca233e4c15d13c28f7c505fafc\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\b9c284ca233e4c15d13c28f7c505fafc\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bf3d923ff77453ac8276873a72f39cbb\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\bf3d923ff77453ac8276873a72f39cbb\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\8c863b6ec05c7ee17c0d5a0145e736b9\transformed\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.3.0] C:\Users\zorik\.gradle\caches\transforms-3\8c863b6ec05c7ee17c0d5a0145e736b9\transformed\navigation-common-2.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3c90abbe6d05892a1eaa9640b713cfa6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\3c90abbe6d05892a1eaa9640b713cfa6\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\dfed2954d6a1b49fe4364ac447a711c4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\dfed2954d6a1b49fe4364ac447a711c4\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\zorik\.gradle\caches\transforms-3\701f2081ad300dd2deb38bc14671cea3\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d9f756eaa24b9faa65f1a45467a1a92e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d9f756eaa24b9faa65f1a45467a1a92e\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\7df6411d89e1431b1a926711eb52bf2b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\7df6411d89e1431b1a926711eb52bf2b\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\2a602c078cb39d0f8b9216e7f886e302\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\zorik\.gradle\caches\transforms-3\2a602c078cb39d0f8b9216e7f886e302\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\72f960e9f3e432c775b62729b4241337\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\72f960e9f3e432c775b62729b4241337\transformed\lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\45bc0137f9591bf71c5d8e22feb00754\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\45bc0137f9591bf71c5d8e22feb00754\transformed\lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\152558186ee20480fbc591db1c4645d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\152558186ee20480fbc591db1c4645d8\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\86b0813d1f98794a614e099d0ecb271c\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\86b0813d1f98794a614e099d0ecb271c\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [no.nordicsemi.android:ble:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\2dda2b1a8dad04061c237dae2fe2d04e\transformed\ble-2.2.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\c53d956ca31b54d6b700c7ecb92482b3\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\c53d956ca31b54d6b700c7ecb92482b3\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\554d1388de07810b693dea6d0a9cfaa6\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\554d1388de07810b693dea6d0a9cfaa6\transformed\lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\4fec6bcdddc94420ca62331d95107f7d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\zorik\.gradle\caches\transforms-3\4fec6bcdddc94420ca62331d95107f7d\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\71137f1184afc59c1804a601d9149aeb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\zorik\.gradle\caches\transforms-3\71137f1184afc59c1804a601d9149aeb\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\8289e9e0bb2a0ab6abbb529b76a82876\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\zorik\.gradle\caches\transforms-3\8289e9e0bb2a0ab6abbb529b76a82876\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\a54a270f264e5987fea7151c37dfa967\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\a54a270f264e5987fea7151c37dfa967\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\aa7e8d0f1eaf734b5f129adf68648bc4\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\aa7e8d0f1eaf734b5f129adf68648bc4\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\6c690d69cb7671b92ae816d8b2223a5c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\6c690d69cb7671b92ae816d8b2223a5c\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d0cd42fd3cb328ca216c59b89c34e15c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\d0cd42fd3cb328ca216c59b89c34e15c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\28f58c72c852ab87da1465b2b6bb79a3\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\28f58c72c852ab87da1465b2b6bb79a3\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\90296386b51d57ce2dcbbd49e0d9b12e\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\90296386b51d57ce2dcbbd49e0d9b12e\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\302da916512acffdfe6fe2468eb767f0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\zorik\.gradle\caches\transforms-3\302da916512acffdfe6fe2468eb767f0\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -304,36 +304,36 @@ INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestL
 		ADDED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 		INJECTED from D:\TECHNION\sem6\Project\Code\libmuse_android_7.1.1\examples\TestLibMuseAndroid\app\src\main\AndroidManifest.xml
 service#no.nordicsemi.android.support.v18.scanner.ScannerService
-ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:31:9-33:40
+ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:31:9-33:40
 	android:exported
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:33:13-37
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:33:13-37
 	android:name
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:32:13-84
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:32:13-84
 receiver#no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver
-ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:41:9-48:20
+ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:41:9-48:20
 	android:exported
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:43:13-36
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:43:13-36
 	tools:ignore
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:44:13-44
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:44:13-44
 	android:name
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:42:13-91
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:42:13-91
 intent-filter#action:name:no.nordicsemi.android.support.v18.ACTION_FOUND
-ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:45:13-47:29
+ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:45:13-47:29
 action#no.nordicsemi.android.support.v18.ACTION_FOUND
-ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:17-89
+ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:46:17-89
 	android:name
-		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\94720a18c38272983a5542b1ebf491b5\transformed\scanner-1.4.3\AndroidManifest.xml:46:25-86
+		ADDED from [no.nordicsemi.android.support.v18:scanner:1.4.3] C:\Users\zorik\.gradle\caches\transforms-3\a0384e785592c8ad0cae031db8fb716c\transformed\scanner-1.4.3\AndroidManifest.xml:46:25-86
 uses-permission#no.nordicsemi.android.LOG
-ADDED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:5-65
+ADDED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f69a66fc99022a94ed3dc1b7b35093d6\transformed\log-2.2.0\AndroidManifest.xml:40:5-65
 	android:name
-		ADDED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\9d15176dddc829b7ea73217c43a24b10\transformed\log-2.2.0\AndroidManifest.xml:40:22-62
+		ADDED from [no.nordicsemi.android:log:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\f69a66fc99022a94ed3dc1b7b35093d6\transformed\log-2.2.0\AndroidManifest.xml:40:22-62
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
-ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:25:9-29:43
 	android:authorities
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:27:13-69
 	android:multiprocess
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:29:13-40
 	android:exported
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:28:13-37
 	android:name
-		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\09d1723ee7970dc2984a0a887ec3717b\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] C:\Users\zorik\.gradle\caches\transforms-3\ae6a7b8b50ae575774195e95cc9676ef\transformed\lifecycle-process-2.2.0\AndroidManifest.xml:26:13-79

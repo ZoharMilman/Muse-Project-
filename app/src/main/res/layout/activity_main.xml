@@ -44,6 +44,21 @@
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
+			android:paddingBottom="4dp"
+			android:text="@string/muse_status"
+			android:textSize="18sp" />
+
+		<TextView
+			android:id="@+id/con_status"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingBottom="8dp"
+			android:text="@string/undefined"
+			android:textSize="18sp" />
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
 			android:textSize="18sp"
 			android:text="Available BLE devices:"
 			android:paddingBottom="4dp"/>
@@ -78,7 +93,7 @@
 				android:layout_width="0dp"
 				android:layout_height="wrap_content"
 				android:layout_weight="1"
-				android:text="@string/app_name"
+				android:text="@string/test_hand"
 				android:layout_marginEnd="4dp"/>
 			<Button
 				android:id="@+id/disconnect_bluetooth"
@@ -92,17 +107,17 @@
 		<TextView
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:textSize="18sp"
-			android:text="@string/status"
-			android:paddingBottom="4dp"/>
+			android:paddingBottom="4dp"
+			android:text="@string/ble_con_status"
+			android:textSize="18sp" />
+
 		<TextView
-			android:id="@+id/con_status"
+			android:id="@+id/ble_con_status"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:textSize="18sp"
+			android:paddingBottom="8dp"
 			android:text="@string/undefined"
-			android:paddingBottom="8dp"/>
-
+			android:textSize="18sp" />
 
 		<TextView
 			android:layout_width="match_parent"

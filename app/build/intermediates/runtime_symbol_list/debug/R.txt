@@ -1313,6 +1313,7 @@ int id barrier 0x7f080051
 int id baseline 0x7f080052
 int id beginOnFirstDraw 0x7f080053
 int id beginning 0x7f080054
+int id ble_con_status 0x7f080163
 int id blink_status 0x7f080055
 int id blocking 0x7f080056
 int id bottom 0x7f080057
@@ -1709,6 +1710,7 @@ int string action_settings 0x7f0d001c
 int string app_name 0x7f0d001d
 int string appbar_scrolling_view_behavior 0x7f0d001e
 int string artifacts 0x7f0d001f
+int string ble_con_status 0x7f0d0041
 int string bottom_sheet_behavior 0x7f0d0020
 int string character_counter_content_description 0x7f0d0021
 int string character_counter_pattern 0x7f0d0022
@@ -1724,6 +1726,7 @@ int string init_val 0x7f0d002b
 int string msg_count 0x7f0d002c
 int string mtrl_chip_close_icon_content_description 0x7f0d002d
 int string muse_elem 0x7f0d002e
+int string muse_status 0x7f0d0042
 int string nav_app_bar_navigate_up_description 0x7f0d002f
 int string nav_app_bar_open_drawer_description 0x7f0d0030
 int string password_toggle_content_description 0x7f0d0031
@@ -1737,10 +1740,10 @@ int string permission_dialog_title 0x7f0d0038
 int string permission_dialog_understand 0x7f0d0039
 int string refresh 0x7f0d003a
 int string search_menu_title 0x7f0d003b
-int string status 0x7f0d003c
 int string status_bar_notification_info_overflow 0x7f0d003d
-int string undefined 0x7f0d003e
-int string version 0x7f0d003f
+int string test_hand 0x7f0d003e
+int string undefined 0x7f0d003f
+int string version 0x7f0d0040
 int style AlertDialog_AppCompat 0x7f0e0000
 int style AlertDialog_AppCompat_Light 0x7f0e0001
 int style Animation_AppCompat_Dialog 0x7f0e0002
