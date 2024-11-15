@@ -109,5 +109,5 @@ It has a few important roles:
 
 ---
 ## **Contact**
-Something doesn't work? Forgot to mention something? Some confusing wording? Feel free to contact me at zoharmilman@campus.technion.ac.il and I will try my absolute best to help you :).;
+Something doesn't work? Forgot to mention something? Some confusing wording? Feel free to contact us at zoharmilman@campus.technion.ac.il or david.molin@campus.technion.ac.il and we will try our best to help you :).
 
