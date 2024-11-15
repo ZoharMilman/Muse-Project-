@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.choosemuse.example.libmuse"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="22"
+        android:targetSdkVersion="30" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="no.nordicsemi.android.LOG" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.choosemuse.example.libmuse.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.BleService" />
+        <!-- <service android:name="com.haifa3D.haifa3d_ble_api.ble.NotificationService" /> -->
+        <!--
+            <service android:name="com.haifa3D.haifa3d_ble_api.ble.TriggerService" />
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.PresetService" />
+        <service android:name="com.haifa3D.haifa3d_ble_api.ble.BatteryLevelService" />
+        -->
+
+
+        <!--
+		Service used to scan in background to emulate scanning with
+		PendingIntent on Android 4.3 - 7.x. Service will scan in background with given
+		settings and filters.
+        -->
+        <service
+            android:name="no.nordicsemi.android.support.v18.scanner.ScannerService"
+            android:exported="false" />
+        <!--
+		The receiver used to scan with PendingIntent on Android 8+.
+		It will translate results from android.bluetooth.le package to
+		no.nordicsemi.android.support.v18, apply filters or perform batching,
+		depending on the settings.
+        -->
+        <receiver
+            android:name="no.nordicsemi.android.support.v18.scanner.PendingIntentReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="no.nordicsemi.android.support.v18.ACTION_FOUND" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.choosemuse.example.libmuse.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

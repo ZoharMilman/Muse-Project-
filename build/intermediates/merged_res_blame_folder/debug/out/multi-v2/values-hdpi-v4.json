@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.choosemuse.example.libmuse.app-mergeDebugResources-22:/values-hdpi-v4/values-hdpi-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\zorik\\.gradle\\caches\\transforms-3\\2bd4e31b61bdaaccf221ab58833869e0\\transformed\\appcompat-1.3.1\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "13",
+                        "endOffsets": "327"
+                    }
+                }
+            ]
+        }
+    ]
+}
