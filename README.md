@@ -72,7 +72,7 @@ file is based mostly on the MainActivity provided by Muse in their usage example
 ### `DeviceAdapter.java`
 This is a simple adapter used for showing BLE devices in the app. 
 
-### `ApiService.java`
+### `BleManager.java`
 The BleManager class handles Bluetooth Low Energy (BLE) scanning, connection management, and data transmission for devices. It is responsible for discovering devices, connecting to them, and reading/writing characteristics.
 
 
